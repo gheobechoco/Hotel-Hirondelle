@@ -10,33 +10,245 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as R404RouteImport } from './routes/404'
+import { Route as AffairesRouteImport } from './routes/affaires'
+import { Route as ChambresRouteImport } from './routes/chambres'
+import { Route as ConditionsDeSejourRouteImport } from './routes/conditions-de-sejour'
+import { Route as ConfidentialiteRouteImport } from './routes/confidentialite'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as GalerieRouteImport } from './routes/galerie'
+import { Route as HotelRouteImport } from './routes/hotel'
+import { Route as InformationsPratiquesRouteImport } from './routes/informations-pratiques'
+import { Route as LongsSejoursRouteImport } from './routes/longs-sejours'
+import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
+import { Route as MerciRouteImport } from './routes/merci'
+import { Route as OffresRouteImport } from './routes/offres'
+import { Route as PolitiqueCookiesRouteImport } from './routes/politique-cookies'
+import { Route as ServicesRouteImport } from './routes/services'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R404Route = R404RouteImport.update({
+  id: '/404',
+  path: '/404',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AffairesRoute = AffairesRouteImport.update({
+  id: '/affaires',
+  path: '/affaires',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChambresRoute = ChambresRouteImport.update({
+  id: '/chambres',
+  path: '/chambres',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConditionsDeSejourRoute = ConditionsDeSejourRouteImport.update({
+  id: '/conditions-de-sejour',
+  path: '/conditions-de-sejour',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConfidentialiteRoute = ConfidentialiteRouteImport.update({
+  id: '/confidentialite',
+  path: '/confidentialite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalerieRoute = GalerieRouteImport.update({
+  id: '/galerie',
+  path: '/galerie',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelRoute = HotelRouteImport.update({
+  id: '/hotel',
+  path: '/hotel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InformationsPratiquesRoute = InformationsPratiquesRouteImport.update({
+  id: '/informations-pratiques',
+  path: '/informations-pratiques',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LongsSejoursRoute = LongsSejoursRouteImport.update({
+  id: '/longs-sejours',
+  path: '/longs-sejours',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
+  id: '/mentions-legales',
+  path: '/mentions-legales',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MerciRoute = MerciRouteImport.update({
+  id: '/merci',
+  path: '/merci',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OffresRoute = OffresRouteImport.update({
+  id: '/offres',
+  path: '/offres',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PolitiqueCookiesRoute = PolitiqueCookiesRouteImport.update({
+  id: '/politique-cookies',
+  path: '/politique-cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/404': typeof R404Route
+  '/affaires': typeof AffairesRoute
+  '/chambres': typeof ChambresRoute
+  '/conditions-de-sejour': typeof ConditionsDeSejourRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/galerie': typeof GalerieRoute
+  '/hotel': typeof HotelRoute
+  '/informations-pratiques': typeof InformationsPratiquesRoute
+  '/longs-sejours': typeof LongsSejoursRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/merci': typeof MerciRoute
+  '/offres': typeof OffresRoute
+  '/politique-cookies': typeof PolitiqueCookiesRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/404': typeof R404Route
+  '/affaires': typeof AffairesRoute
+  '/chambres': typeof ChambresRoute
+  '/conditions-de-sejour': typeof ConditionsDeSejourRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/galerie': typeof GalerieRoute
+  '/hotel': typeof HotelRoute
+  '/informations-pratiques': typeof InformationsPratiquesRoute
+  '/longs-sejours': typeof LongsSejoursRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/merci': typeof MerciRoute
+  '/offres': typeof OffresRoute
+  '/politique-cookies': typeof PolitiqueCookiesRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/404': typeof R404Route
+  '/affaires': typeof AffairesRoute
+  '/chambres': typeof ChambresRoute
+  '/conditions-de-sejour': typeof ConditionsDeSejourRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/galerie': typeof GalerieRoute
+  '/hotel': typeof HotelRoute
+  '/informations-pratiques': typeof InformationsPratiquesRoute
+  '/longs-sejours': typeof LongsSejoursRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/merci': typeof MerciRoute
+  '/offres': typeof OffresRoute
+  '/politique-cookies': typeof PolitiqueCookiesRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/404'
+    | '/affaires'
+    | '/chambres'
+    | '/conditions-de-sejour'
+    | '/confidentialite'
+    | '/contact'
+    | '/faq'
+    | '/galerie'
+    | '/hotel'
+    | '/informations-pratiques'
+    | '/longs-sejours'
+    | '/mentions-legales'
+    | '/merci'
+    | '/offres'
+    | '/politique-cookies'
+    | '/services'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/404'
+    | '/affaires'
+    | '/chambres'
+    | '/conditions-de-sejour'
+    | '/confidentialite'
+    | '/contact'
+    | '/faq'
+    | '/galerie'
+    | '/hotel'
+    | '/informations-pratiques'
+    | '/longs-sejours'
+    | '/mentions-legales'
+    | '/merci'
+    | '/offres'
+    | '/politique-cookies'
+    | '/services'
+  id:
+    | '__root__'
+    | '/'
+    | '/404'
+    | '/affaires'
+    | '/chambres'
+    | '/conditions-de-sejour'
+    | '/confidentialite'
+    | '/contact'
+    | '/faq'
+    | '/galerie'
+    | '/hotel'
+    | '/informations-pratiques'
+    | '/longs-sejours'
+    | '/mentions-legales'
+    | '/merci'
+    | '/offres'
+    | '/politique-cookies'
+    | '/services'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  R404Route: typeof R404Route
+  AffairesRoute: typeof AffairesRoute
+  ChambresRoute: typeof ChambresRoute
+  ConditionsDeSejourRoute: typeof ConditionsDeSejourRoute
+  ConfidentialiteRoute: typeof ConfidentialiteRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  GalerieRoute: typeof GalerieRoute
+  HotelRoute: typeof HotelRoute
+  InformationsPratiquesRoute: typeof InformationsPratiquesRoute
+  LongsSejoursRoute: typeof LongsSejoursRoute
+  MentionsLegalesRoute: typeof MentionsLegalesRoute
+  MerciRoute: typeof MerciRoute
+  OffresRoute: typeof OffresRoute
+  PolitiqueCookiesRoute: typeof PolitiqueCookiesRoute
+  ServicesRoute: typeof ServicesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +260,139 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/404': {
+      id: '/404'
+      path: '/404'
+      fullPath: '/404'
+      preLoaderRoute: typeof R404RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/affaires': {
+      id: '/affaires'
+      path: '/affaires'
+      fullPath: '/affaires'
+      preLoaderRoute: typeof AffairesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/chambres': {
+      id: '/chambres'
+      path: '/chambres'
+      fullPath: '/chambres'
+      preLoaderRoute: typeof ChambresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conditions-de-sejour': {
+      id: '/conditions-de-sejour'
+      path: '/conditions-de-sejour'
+      fullPath: '/conditions-de-sejour'
+      preLoaderRoute: typeof ConditionsDeSejourRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/confidentialite': {
+      id: '/confidentialite'
+      path: '/confidentialite'
+      fullPath: '/confidentialite'
+      preLoaderRoute: typeof ConfidentialiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galerie': {
+      id: '/galerie'
+      path: '/galerie'
+      fullPath: '/galerie'
+      preLoaderRoute: typeof GalerieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotel': {
+      id: '/hotel'
+      path: '/hotel'
+      fullPath: '/hotel'
+      preLoaderRoute: typeof HotelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/informations-pratiques': {
+      id: '/informations-pratiques'
+      path: '/informations-pratiques'
+      fullPath: '/informations-pratiques'
+      preLoaderRoute: typeof InformationsPratiquesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/longs-sejours': {
+      id: '/longs-sejours'
+      path: '/longs-sejours'
+      fullPath: '/longs-sejours'
+      preLoaderRoute: typeof LongsSejoursRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mentions-legales': {
+      id: '/mentions-legales'
+      path: '/mentions-legales'
+      fullPath: '/mentions-legales'
+      preLoaderRoute: typeof MentionsLegalesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/merci': {
+      id: '/merci'
+      path: '/merci'
+      fullPath: '/merci'
+      preLoaderRoute: typeof MerciRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/offres': {
+      id: '/offres'
+      path: '/offres'
+      fullPath: '/offres'
+      preLoaderRoute: typeof OffresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politique-cookies': {
+      id: '/politique-cookies'
+      path: '/politique-cookies'
+      fullPath: '/politique-cookies'
+      preLoaderRoute: typeof PolitiqueCookiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  R404Route: R404Route,
+  AffairesRoute: AffairesRoute,
+  ChambresRoute: ChambresRoute,
+  ConditionsDeSejourRoute: ConditionsDeSejourRoute,
+  ConfidentialiteRoute: ConfidentialiteRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  GalerieRoute: GalerieRoute,
+  HotelRoute: HotelRoute,
+  InformationsPratiquesRoute: InformationsPratiquesRoute,
+  LongsSejoursRoute: LongsSejoursRoute,
+  MentionsLegalesRoute: MentionsLegalesRoute,
+  MerciRoute: MerciRoute,
+  OffresRoute: OffresRoute,
+  PolitiqueCookiesRoute: PolitiqueCookiesRoute,
+  ServicesRoute: ServicesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

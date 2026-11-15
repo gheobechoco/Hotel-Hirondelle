@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Use leaf TanStack routes with a shared HotelShell and central hotel data; this keeps navigation and content metadata consistent.
+- Availability and contact forms share a validated public server function that only inserts into a locked request table; no visitor can read submitted personal data.
+- Preserve the supplied content catalogue separately from display data and gate operational claims by approval status; drafts must not leak into the website.

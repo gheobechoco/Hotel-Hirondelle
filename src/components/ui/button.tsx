@@ -9,6 +9,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        hotel: "bg-gold text-primary rounded-none hover:bg-gold/90 h-11 px-6 text-xs shadow-none",
+        hero: "border border-on-image/60 bg-transparent text-on-image rounded-none hover:bg-on-image/10 h-11 px-6 text-xs",
         default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:

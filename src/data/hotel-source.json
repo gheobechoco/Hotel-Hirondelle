@@ -1,0 +1,2042 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Hôtel L'Hirondelle - Site web",
+    "type": "hotel-website-content-config",
+    "status": "ready_for_design_and_development",
+    "primaryLocale": "fr",
+    "enabledLocales": [
+      "fr",
+      "en"
+    ],
+    "contentPolicy": "Do not publish entries marked pending_validation. All prices, facilities, testimonials, distances and operational details must be confirmed by hotel management before publication."
+  },
+  "siteMetadata": {
+    "name": "Hôtel L'Hirondelle",
+    "shortName": "L'Hirondelle",
+    "tagline": "Votre havre de paix verdoyant au cœur de Port-Gentil",
+    "description": "Un hébergement au centre de Port-Gentil, avec chambres climatisées et studios meublés pour les séjours professionnels, les escales et les séjours prolongés.",
+    "domain": null,
+    "logo": "/images/brand/logo-hirondelle.svg",
+    "favicon": "/images/brand/favicon.png",
+    "defaultShareImage": "/images/og/hotel-hirondelle-port-gentil.jpg",
+    "seo": {
+      "title": "Hôtel L'Hirondelle Port-Gentil | Chambres, Studios & Séjours au Gabon",
+      "description": "Découvrez l'Hôtel L'Hirondelle à Port-Gentil : chambres climatisées, studios meublés et services pour vos séjours professionnels ou personnels. Contactez-nous pour vérifier les disponibilités.",
+      "keywords": [
+        "hôtel Port-Gentil",
+        "hôtel L'Hirondelle Port-Gentil",
+        "studio meublé Port-Gentil",
+        "hébergement professionnel Gabon",
+        "location studio Port-Gentil",
+        "hébergement long séjour Port-Gentil"
+      ],
+      "robots": "index,follow",
+      "canonicalUrl": null,
+      "openGraph": {
+        "type": "website",
+        "siteName": "Hôtel L'Hirondelle",
+        "locale": "fr_GA",
+        "image": "/images/og/hotel-hirondelle-port-gentil.jpg"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      },
+      "structuredDataType": "Hotel",
+      "structuredDataEnabled": true
+    },
+    "location": {
+      "address": "Carrefour des Douanes, BP 369",
+      "city": "Port-Gentil",
+      "province": "Ogooué-Maritime",
+      "postalCode": null,
+      "country": "Gabon",
+      "countryCode": "GA",
+      "coordinates": {
+        "lat": -0.7193,
+        "lng": 8.7815,
+        "verificationStatus": "pending_validation"
+      },
+      "map": {
+        "provider": "Google Maps",
+        "embedUrl": null,
+        "directionsUrl": "https://www.google.com/maps/search/?api=1&query=-0.7193%2C8.7815",
+        "showMap": true
+      },
+      "proximityMetrics": [
+        {
+          "landmark": "Côte / Bord de mer",
+          "distance": "5 min à pied",
+          "verificationStatus": "pending_validation"
+        },
+        {
+          "landmark": "Port de Port-Gentil & banques",
+          "distance": "3 min en voiture",
+          "verificationStatus": "pending_validation"
+        },
+        {
+          "landmark": "Aéroport international de Port-Gentil (POG)",
+          "distance": "15 min en voiture",
+          "verificationStatus": "pending_validation"
+        }
+      ]
+    },
+    "contact": {
+      "phones": [
+        {
+          "label": "Standard",
+          "display": "+241 11 56 43 37",
+          "tel": "+24111564337"
+        },
+        {
+          "label": "Réservations / WhatsApp",
+          "display": "+241 05 94 22 69",
+          "tel": "+24105942269"
+        },
+        {
+          "label": "Téléphone secondaire",
+          "display": "+241 07 37 09 28",
+          "tel": "+24107370928"
+        }
+      ],
+      "whatsapp": {
+        "number": "24105942269",
+        "display": "+241 05 94 22 69",
+        "url": "https://wa.me/24105942269",
+        "defaultMessage": "Bonjour, je souhaite obtenir des renseignements et vérifier les disponibilités de l'Hôtel L'Hirondelle à Port-Gentil."
+      },
+      "email": "hotelhirondellepog@yahoo.com",
+      "emailLinks": {
+        "general": "mailto:hotelhirondellepog@yahoo.com",
+        "booking": "mailto:hotelhirondellepog@yahoo.com?subject=Demande%20de%20r%C3%A9servation%20-%20H%C3%B4tel%20L'Hirondelle",
+        "business": "mailto:hotelhirondellepog@yahoo.com?subject=Demande%20de%20convention%20entreprise%20-%20H%C3%B4tel%20L'Hirondelle"
+      },
+      "socials": {
+        "facebook": {
+          "url": "https://www.facebook.com/hotelhirondellepog/",
+          "status": "provided_by_source"
+        },
+        "instagram": {
+          "url": null,
+          "status": "needs_official_account_confirmation"
+        },
+        "tiktok": {
+          "url": null,
+          "status": "not_provided"
+        },
+        "youtube": {
+          "url": null,
+          "status": "not_provided"
+        },
+        "linkedin": {
+          "url": null,
+          "status": "not_provided"
+        }
+      },
+      "responseTime": null,
+      "languagesSpoken": [
+        "fr",
+        "en"
+      ],
+      "verificationStatus": "pending_validation"
+    },
+    "currency": {
+      "code": "XAF",
+      "label": "FCFA",
+      "symbol": "FCFA",
+      "displayPosition": "after_amount"
+    },
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "translationStatus": {
+      "fr": "source_content",
+      "en": "translation_to_complete_before_enabling"
+    },
+    "businessDetails": {
+      "propertyType": "hotel_and_furnished_studios",
+      "claimedRoomCount": 60,
+      "roomCountVerificationStatus": "pending_validation",
+      "checkInTime": null,
+      "checkOutTime": null,
+      "frontDeskHours": "24h/24 (information source à confirmer)",
+      "starRating": null
+    }
+  },
+  "designSystem": {
+    "brandDirection": "Hôtel de charme, calme, verdure tropicale, confort professionnel et accueil chaleureux.",
+    "colors": {
+      "primary": "#1E4D3B",
+      "primaryLight": "#2F6F56",
+      "primaryDark": "#15392C",
+      "secondary": "#2B6CB0",
+      "accent": "#D69E2E",
+      "accentHover": "#B7791F",
+      "background": "#F9FAFB",
+      "surface": "#F4F1EA",
+      "surfaceWhite": "#FFFFFF",
+      "textPrimary": "#1A202C",
+      "textSecondary": "#4A5568",
+      "border": "#E2E8F0",
+      "success": "#237A57",
+      "warning": "#A16207",
+      "error": "#B42318"
+    },
+    "typography": {
+      "headingFont": "Playfair Display, Georgia, serif",
+      "bodyFont": "Plus Jakarta Sans, Arial, sans-serif",
+      "baseFontSize": "16px",
+      "lineHeight": 1.6
+    },
+    "layout": {
+      "maxContentWidth": "1200px",
+      "headerHeightDesktop": "84px",
+      "headerHeightMobile": "68px",
+      "sectionSpacing": "88px",
+      "mobileSectionSpacing": "56px"
+    },
+    "borderRadius": {
+      "small": "6px",
+      "medium": "8px",
+      "large": "16px",
+      "pill": "999px"
+    },
+    "shadows": {
+      "card": "0 12px 35px rgba(26,32,44,0.08)",
+      "floating": "0 8px 24px rgba(26,32,44,0.12)"
+    },
+    "buttons": {
+      "primaryStyle": "solid",
+      "secondaryStyle": "outline",
+      "minimumTapTarget": "44px"
+    },
+    "motion": {
+      "enabled": true,
+      "style": "subtle",
+      "respectReducedMotion": true,
+      "avoidAutoplayAudio": true
+    },
+    "imagery": {
+      "style": "photographie réelle, lumineuse, naturelle, chaleureuse",
+      "avoid": [
+        "photos génériques ne représentant pas l'hôtel",
+        "images déformées par IA présentées comme des photos réelles",
+        "galeries avec photos de chambres non correspondantes"
+      ]
+    }
+  },
+  "globalComponents": {
+    "announcementBar": {
+      "enabled": false,
+      "text": null,
+      "link": null
+    },
+    "header": {
+      "logo": "/images/brand/logo-hirondelle.svg",
+      "navigation": [
+        {
+          "label": "Accueil",
+          "path": "/"
+        },
+        {
+          "label": "Chambres & Studios",
+          "path": "/chambres"
+        },
+        {
+          "label": "Restaurant & Services",
+          "path": "/services"
+        },
+        {
+          "label": "Affaires & Longs Séjours",
+          "path": "/affaires"
+        },
+        {
+          "label": "Galerie",
+          "path": "/galerie"
+        },
+        {
+          "label": "Contact & Accès",
+          "path": "/contact"
+        }
+      ],
+      "primaryCta": {
+        "label": "Réserver",
+        "action": "open_booking"
+      },
+      "languageSwitcher": true,
+      "mobileMenu": true,
+      "stickyOnScroll": true
+    },
+    "floatingActions": [
+      {
+        "id": "whatsapp",
+        "label": "WhatsApp",
+        "icon": "message-circle",
+        "url": "https://wa.me/24105942269",
+        "enabled": true
+      },
+      {
+        "id": "call",
+        "label": "Appeler",
+        "icon": "phone",
+        "url": "tel:+24111564337",
+        "enabled": true
+      }
+    ],
+    "footer": {
+      "tagline": "Votre havre de paix verdoyant au cœur de Port-Gentil.",
+      "columns": [
+        {
+          "title": "Découvrir",
+          "links": [
+            {
+              "label": "Accueil",
+              "path": "/"
+            },
+            {
+              "label": "Nos chambres",
+              "path": "/chambres"
+            },
+            {
+              "label": "Services",
+              "path": "/services"
+            },
+            {
+              "label": "Galerie",
+              "path": "/galerie"
+            }
+          ]
+        },
+        {
+          "title": "Séjours",
+          "links": [
+            {
+              "label": "Séjours professionnels",
+              "path": "/affaires"
+            },
+            {
+              "label": "Longs séjours",
+              "path": "/longs-sejours"
+            },
+            {
+              "label": "Offres",
+              "path": "/offres"
+            },
+            {
+              "label": "FAQ",
+              "path": "/faq"
+            }
+          ]
+        },
+        {
+          "title": "Informations",
+          "links": [
+            {
+              "label": "Accès & localisation",
+              "path": "/contact#access"
+            },
+            {
+              "label": "Informations pratiques",
+              "path": "/informations-pratiques"
+            },
+            {
+              "label": "Confidentialité",
+              "path": "/confidentialite"
+            },
+            {
+              "label": "Mentions légales",
+              "path": "/mentions-legales"
+            }
+          ]
+        }
+      ],
+      "contactSummary": true,
+      "socialLinks": true,
+      "newsletter": {
+        "enabled": false,
+        "requiresConsent": true
+      },
+      "copyright": "© {currentYear} Hôtel L'Hirondelle. Tous droits réservés."
+    },
+    "cookieConsent": {
+      "enabled": true,
+      "essentialCookiesAlwaysOn": true,
+      "analyticsDefault": false,
+      "marketingDefault": false,
+      "policyPath": "/confidentialite"
+    }
+  },
+  "navigation": [
+    {
+      "label": "Accueil",
+      "path": "/",
+      "pageId": "home"
+    },
+    {
+      "label": "Chambres & Studios",
+      "path": "/chambres",
+      "pageId": "rooms"
+    },
+    {
+      "label": "Restaurant & Services",
+      "path": "/services",
+      "pageId": "services"
+    },
+    {
+      "label": "Affaires & Longs Séjours",
+      "path": "/affaires",
+      "pageId": "business"
+    },
+    {
+      "label": "Galerie",
+      "path": "/galerie",
+      "pageId": "gallery"
+    },
+    {
+      "label": "Contact & Accès",
+      "path": "/contact",
+      "pageId": "contact"
+    }
+  ],
+  "pages": {
+    "home": {
+      "path": "/",
+      "seo": {
+        "title": "Hôtel L'Hirondelle | Hôtel & Studios à Port-Gentil",
+        "description": "Séjournez à l'Hôtel L'Hirondelle à Port-Gentil : chambres climatisées et studios meublés. Consultez nos hébergements et contactez-nous pour vos dates."
+      },
+      "hero": {
+        "eyebrow": "Hôtel L'Hirondelle · Port-Gentil, Gabon",
+        "title": "Le calme et le confort au cœur de Port-Gentil",
+        "subtitle": "Des chambres climatisées et des studios meublés pour vos déplacements professionnels, vos escales et vos séjours prolongés.",
+        "backgroundImage": "/images/home/hero-hotel.jpg",
+        "backgroundImageAlt": "Vue réelle de l'Hôtel L'Hirondelle et de son environnement verdoyant",
+        "primaryCta": {
+          "label": "Voir les chambres",
+          "path": "/chambres"
+        },
+        "secondaryCta": {
+          "label": "Vérifier les disponibilités",
+          "action": "open_booking"
+        },
+        "claimDependencies": [
+          "property_photos",
+          "room_count",
+          "garden_description"
+        ]
+      },
+      "quickBookingWidget": {
+        "enabled": true,
+        "mode": "availability_request",
+        "liveInventoryConnected": false,
+        "fields": [
+          "checkIn",
+          "checkOut",
+          "adults",
+          "children",
+          "rooms",
+          "roomCategory"
+        ],
+        "submitLabel": "Demander les disponibilités",
+        "helperText": "Votre demande sera transmise à notre équipe. La réservation sera confirmée après vérification par l'hôtel.",
+        "validation": {
+          "checkOutMustBeAfterCheckIn": true,
+          "minAdults": 1,
+          "minRooms": 1
+        },
+        "submission": {
+          "method": "whatsapp_or_email",
+          "manualConfirmationRequired": true
+        }
+      },
+      "intro": {
+        "title": "Un séjour adapté à votre rythme",
+        "paragraphs": [
+          "Situé au Carrefour des Douanes à Port-Gentil, l'Hôtel L'Hirondelle propose des hébergements pensés pour le repos et la praticité.",
+          "Que vous soyez de passage pour quelques nuits ou à la recherche d'un studio pour une durée plus longue, découvrez les catégories d'hébergement et contactez notre équipe pour choisir la formule adaptée."
+        ],
+        "image": "/images/home/hotel-jardin.jpg",
+        "imageAlt": "Espace extérieur réel de l'hôtel à photographier"
+      },
+      "keyBenefits": [
+        {
+          "icon": "map-pin",
+          "title": "Au centre de Port-Gentil",
+          "description": "Au Carrefour des Douanes, sous réserve de confirmation de l'adresse et des temps de trajet."
+        },
+        {
+          "icon": "bed-double",
+          "title": "Chambres & studios meublés",
+          "description": "Plusieurs catégories d'hébergement pour les courts et longs séjours."
+        },
+        {
+          "icon": "briefcase-business",
+          "title": "Séjours professionnels",
+          "description": "Des informations et demandes de devis adaptées aux entreprises."
+        },
+        {
+          "icon": "message-circle",
+          "title": "Contact direct",
+          "description": "Contactez l'équipe par téléphone, email ou WhatsApp."
+        }
+      ],
+      "infrastructureAndSecurity": [
+        {
+          "icon": "zap",
+          "title": "Énergie & eau",
+          "description": "Groupe électrogène de secours et réserve d'eau autonome.",
+          "status": "pending_validation"
+        },
+        {
+          "icon": "wifi",
+          "title": "Wi-Fi",
+          "description": "Connexion Wi-Fi annoncée dans les chambres, studios et espaces de réunion.",
+          "status": "pending_validation"
+        },
+        {
+          "icon": "shield-check",
+          "title": "Sécurité & parking",
+          "description": "Gardiennage, vidéosurveillance et stationnement intérieur annoncés.",
+          "status": "pending_validation"
+        },
+        {
+          "icon": "coffee",
+          "title": "Petit-déjeuner",
+          "description": "Petit-déjeuner annoncé comme inclus dans certaines catégories de tarifs.",
+          "status": "pending_validation"
+        }
+      ],
+      "featuredRooms": {
+        "title": "Nos hébergements",
+        "subtitle": "Choisissez l'espace qui correspond à votre séjour.",
+        "source": "pages.rooms.categories",
+        "limit": 4,
+        "showStartingPrice": true
+      },
+      "servicesPreview": {
+        "title": "Tout pour faciliter votre séjour",
+        "source": "pages.services.sections",
+        "limit": 4
+      },
+      "businessPromo": {
+        "title": "Vous voyagez pour le travail ?",
+        "description": "Découvrez les solutions d'hébergement pour les collaborateurs, consultants et entreprises en déplacement à Port-Gentil.",
+        "image": "/images/home/business-traveler.jpg",
+        "cta": {
+          "label": "Découvrir les solutions entreprises",
+          "path": "/affaires"
+        }
+      },
+      "galleryPreview": {
+        "title": "Un aperçu de L'Hirondelle",
+        "source": "pages.gallery.albums",
+        "limit": 6,
+        "cta": {
+          "label": "Voir toutes les photos",
+          "path": "/galerie"
+        }
+      },
+      "testimonials": {
+        "enabled": false,
+        "reason": "Aucun avis client authentifié n'a été fourni. Ne pas publier les deux citations fictives présentes dans le brouillon.",
+        "sourceLinks": [
+          {
+            "label": "Consulter les avis sur Tripadvisor",
+            "url": null,
+            "status": "official_listing_url_to_confirm"
+          }
+        ],
+        "displayOnlyAfterVerification": true
+      },
+      "locationPreview": {
+        "title": "Retrouvez-nous à Port-Gentil",
+        "addressRef": "siteMetadata.location",
+        "showMap": true,
+        "cta": {
+          "label": "Voir l'itinéraire",
+          "action": "open_directions"
+        }
+      },
+      "finalCta": {
+        "title": "Préparez votre prochain séjour",
+        "description": "Indiquez-nous vos dates et le type d'hébergement recherché. Notre équipe vous répondra pour confirmer les disponibilités.",
+        "primary": {
+          "label": "Faire une demande",
+          "action": "open_booking"
+        },
+        "secondary": {
+          "label": "Nous écrire sur WhatsApp",
+          "url": "https://wa.me/24105942269"
+        }
+      }
+    },
+    "rooms": {
+      "path": "/chambres",
+      "seo": {
+        "title": "Chambres & Studios à Port-Gentil | Hôtel L'Hirondelle",
+        "description": "Comparez les chambres standard, supérieures, studios et suites de l'Hôtel L'Hirondelle à Port-Gentil. Tarifs indicatifs à confirmer auprès de l'hôtel."
+      },
+      "title": "Nos chambres & studios",
+      "subtitle": "Des espaces meublés pour les escales, déplacements professionnels et séjours prolongés.",
+      "introImage": "/images/rooms/rooms-overview.jpg",
+      "priceDisclaimer": "Tarifs indicatifs fournis dans le cahier initial, à confirmer par l'hôtel. Le prix final, les taxes, les conditions et les éventuels suppléments doivent être communiqués avant confirmation.",
+      "categories": [
+        {
+          "id": "chambre-standard",
+          "slug": "chambre-standard",
+          "name": "Chambre Standard",
+          "startingPrice": 57500,
+          "priceCurrency": "XAF",
+          "priceUnit": "nuit",
+          "priceStatus": "pending_validation",
+          "sizeSqm": 22,
+          "bedType": "1 lit double",
+          "capacity": {
+            "min": 1,
+            "max": 2
+          },
+          "hasKitchenette": false,
+          "shortDescription": "Une chambre fonctionnelle pour une escale ou un déplacement professionnel.",
+          "images": [
+            "/images/rooms/standard-1.jpg",
+            "/images/rooms/standard-bath.jpg"
+          ],
+          "amenities": [
+            "Climatisation individuelle",
+            "Smart TV",
+            "Wi-Fi gratuit",
+            "Minibar",
+            "Douche à effet pluie",
+            "Petit-déjeuner inclus"
+          ],
+          "amenitiesStatus": "pending_validation",
+          "monthlyRateAvailable": false,
+          "detailPath": "/chambres/chambre-standard",
+          "bookCta": "Demander cette chambre",
+          "featured": true
+        },
+        {
+          "id": "chambre-superieure",
+          "slug": "chambre-superieure-terrasse",
+          "name": "Chambre Supérieure avec Terrasse",
+          "startingPrice": 65000,
+          "priceCurrency": "XAF",
+          "priceUnit": "nuit",
+          "priceStatus": "pending_validation",
+          "sizeSqm": 28,
+          "bedType": "1 lit Queen Size",
+          "capacity": {
+            "min": 1,
+            "max": 2
+          },
+          "hasKitchenette": false,
+          "shortDescription": "Un espace plus généreux avec balcon ou terrasse privative donnant sur le jardin, selon disponibilité.",
+          "images": [
+            "/images/rooms/superieure-1.jpg",
+            "/images/rooms/superieure-terrace.jpg"
+          ],
+          "amenities": [
+            "Balcon ou terrasse privative sur jardin",
+            "Climatisation individuelle",
+            "Espace bureau",
+            "Smart TV",
+            "Wi-Fi",
+            "Minibar",
+            "Petit-déjeuner inclus"
+          ],
+          "amenitiesStatus": "pending_validation",
+          "monthlyRateAvailable": false,
+          "detailPath": "/chambres/chambre-superieure-terrasse",
+          "bookCta": "Demander cette chambre",
+          "featured": true
+        },
+        {
+          "id": "studio-kitchenette",
+          "slug": "studio-meuble",
+          "name": "Studio & Appartement Meublé",
+          "startingPrice": 60500,
+          "priceCurrency": "XAF",
+          "priceUnit": "nuit",
+          "priceStatus": "pending_validation",
+          "sizeSqm": 35,
+          "bedType": "1 lit Queen Size",
+          "capacity": {
+            "min": 1,
+            "max": 2
+          },
+          "hasKitchenette": true,
+          "shortDescription": "Un espace de vie pratique avec coin repas et kitchenette pour les séjours autonomes.",
+          "images": [
+            "/images/rooms/studio-1.jpg",
+            "/images/rooms/studio-kitchen.jpg"
+          ],
+          "amenities": [
+            "Kitchenette équipée : plaques, réfrigérateur, micro-ondes et vaisselle",
+            "Coin repas",
+            "Espace bureau",
+            "Climatisation individuelle",
+            "Smart TV",
+            "Wi-Fi haut débit",
+            "Tarifs mensuels sur demande"
+          ],
+          "amenitiesStatus": "pending_validation",
+          "monthlyRateAvailable": true,
+          "monthlyRateNote": "Tarif mensuel sur demande, montant à confirmer.",
+          "detailPath": "/chambres/studio-meuble",
+          "bookCta": "Demander un tarif long séjour",
+          "featured": true
+        },
+        {
+          "id": "suite-deluxe",
+          "slug": "chambre-deluxe-suite",
+          "name": "Chambre Deluxe & Suite",
+          "startingPrice": 85000,
+          "priceCurrency": "XAF",
+          "priceUnit": "nuit",
+          "priceStatus": "pending_validation",
+          "sizeSqm": 45,
+          "bedType": "1 lit King Size",
+          "capacity": {
+            "min": 2,
+            "max": 3
+          },
+          "hasKitchenette": true,
+          "shortDescription": "Une catégorie plus spacieuse avec salon séparé et kitchenette, selon configuration réelle.",
+          "images": [
+            "/images/rooms/suite-1.jpg",
+            "/images/rooms/suite-living.jpg"
+          ],
+          "amenities": [
+            "Salon séparé",
+            "Kitchenette équipée",
+            "Terrasse privative",
+            "Salle de bain spacieuse",
+            "Petit-déjeuner inclus"
+          ],
+          "amenitiesStatus": "pending_validation",
+          "monthlyRateAvailable": true,
+          "monthlyRateNote": "Tarif long séjour sur demande.",
+          "detailPath": "/chambres/chambre-deluxe-suite",
+          "bookCta": "Demander cette suite",
+          "featured": true
+        }
+      ],
+      "comparisonFields": [
+        "startingPrice",
+        "sizeSqm",
+        "bedType",
+        "capacity",
+        "hasKitchenette",
+        "amenities"
+      ],
+      "roomDetailTemplate": {
+        "sections": [
+          "gallery",
+          "description",
+          "roomFacts",
+          "amenities",
+          "rateAndConditions",
+          "availabilityRequest",
+          "faq",
+          "similarRooms"
+        ],
+        "showPrice": true,
+        "showPolicies": "only_when_confirmed"
+      },
+      "bookingNotice": "L'envoi du formulaire constitue une demande de disponibilité et non une confirmation automatique de réservation."
+    },
+    "services": {
+      "path": "/services",
+      "seo": {
+        "title": "Restaurant & Services | Hôtel L'Hirondelle Port-Gentil",
+        "description": "Découvrez les prestations de restauration, transport et services proposés par l'Hôtel L'Hirondelle à Port-Gentil. Informations à confirmer auprès de l'établissement."
+      },
+      "title": "Restauration & services",
+      "subtitle": "Les services annoncés pour vous accompagner pendant votre séjour.",
+      "sections": [
+        {
+          "id": "restaurant-bar",
+          "name": "Restaurant & Bar Lounge",
+          "description": "Une offre de restauration annoncée autour de la cuisine locale gabonaise et de plats internationaux, dans un cadre avec terrasse ombragée.",
+          "hours": "06h30 - 22h30",
+          "hoursStatus": "pending_validation",
+          "features": [
+            "Petit-déjeuner continental",
+            "Service en chambre",
+            "Bar & rafraîchissements",
+            "Cuisine locale et internationale"
+          ],
+          "image": "/images/services/restaurant.jpg",
+          "status": "pending_validation",
+          "cta": {
+            "label": "Demander les horaires et le menu",
+            "action": "contact"
+          }
+        },
+        {
+          "id": "transport",
+          "name": "Transport & logistique",
+          "description": "Des services destinés à faciliter les déplacements à Port-Gentil.",
+          "features": [
+            "Navette aéroport POG sur réservation"
+          ],
+          "image": "/images/services/transport.jpg",
+          "status": "pending_validation",
+          "cta": {
+            "label": "Demander un transfert",
+            "action": "whatsapp"
+          }
+        },
+        {
+          "id": "laundry",
+          "name": "Blanchisserie",
+          "description": "Service de blanchisserie annoncé pour les clients de l'hôtel.",
+          "features": [
+            "Blanchisserie quotidienne"
+          ],
+          "image": "/images/services/laundry.jpg",
+          "status": "pending_validation"
+        },
+        {
+          "id": "parking-security",
+          "name": "Parking & sécurité",
+          "description": "Un stationnement privé et des dispositifs de sécurité sont annoncés.",
+          "features": [
+            "Parking privé",
+            "Gardiennage",
+            "Vidéosurveillance"
+          ],
+          "image": "/images/services/parking.jpg",
+          "status": "pending_validation"
+        },
+        {
+          "id": "reception",
+          "name": "Accueil & réception",
+          "description": "Informations sur l'accueil et l'assistance à confirmer auprès de l'équipe.",
+          "features": [
+            "Réception annoncée 24h/24"
+          ],
+          "image": "/images/services/reception.jpg",
+          "status": "pending_validation"
+        },
+        {
+          "id": "wifi-power-water",
+          "name": "Connectivité & continuité des services",
+          "description": "Wi-Fi, alimentation électrique de secours et réserve d'eau mentionnés dans les informations initiales.",
+          "features": [
+            "Wi-Fi",
+            "Groupe électrogène",
+            "Réserve d'eau"
+          ],
+          "image": "/images/services/wifi.jpg",
+          "status": "pending_validation"
+        }
+      ],
+      "serviceAvailabilityNote": "Les horaires, disponibilités, tarifs et conditions des services sont à confirmer directement auprès de l'hôtel."
+    },
+    "business": {
+      "path": "/affaires",
+      "seo": {
+        "title": "Hébergement entreprise & séjours professionnels | Hôtel L'Hirondelle",
+        "description": "Solutions d'hébergement pour entreprises, consultants et collaborateurs en déplacement professionnel à Port-Gentil. Demandez un devis à l'Hôtel L'Hirondelle."
+      },
+      "title": "Vos séjours professionnels à Port-Gentil",
+      "description": "Un hébergement présenté comme adapté aux professionnels des secteurs pétrolier, maritime, industriel et aux consultants en mission.",
+      "heroImage": "/images/business/business-stay.jpg",
+      "audiences": [
+        "Entreprises et administrations",
+        "Consultants et prestataires",
+        "Équipes en mission",
+        "Voyageurs d'affaires",
+        "Collaborateurs en mobilité"
+      ],
+      "benefits": [
+        {
+          "icon": "file-text",
+          "title": "Facturation entreprise",
+          "description": "Possibilité de demander une facturation adaptée aux besoins de l'entreprise, sous réserve de confirmation."
+        },
+        {
+          "icon": "calendar-range",
+          "title": "Longs séjours",
+          "description": "Demande de tarifs dégressifs pour les séjours prolongés."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Emplacement à Port-Gentil",
+          "description": "Adresse indiquée au Carrefour des Douanes ; distances et temps de trajet à vérifier."
+        },
+        {
+          "icon": "users",
+          "title": "Demandes de groupe",
+          "description": "Contactez l'hôtel pour étudier les besoins de plusieurs collaborateurs."
+        }
+      ],
+      "meetingRooms": {
+        "available": true,
+        "maxCapacity": 40,
+        "capacityStatus": "pending_validation",
+        "equipment": [
+          "Vidéoprojecteur",
+          "Écran",
+          "Wi-Fi fibre dédié",
+          "Pause-café et déjeuner"
+        ],
+        "status": "pending_validation",
+        "displayOnlyWhenConfirmed": true
+      },
+      "offerings": [
+        "Forfaits longs séjours avec tarifs dégressifs sur demande",
+        "Demandes de conventions d'hébergement",
+        "Facturation entreprise à confirmer",
+        "Demandes de devis pour groupes"
+      ],
+      "leadForm": {
+        "enabled": true,
+        "fields": [
+          "companyName",
+          "contactName",
+          "email",
+          "phone",
+          "numberOfGuests",
+          "arrivalDate",
+          "departureDate",
+          "roomTypes",
+          "needs",
+          "message"
+        ],
+        "submitLabel": "Demander un devis entreprise",
+        "delivery": "email",
+        "recipient": "hotelhirondellepog@yahoo.com"
+      },
+      "cta": {
+        "text": "Demander une convention entreprise",
+        "action": "mailto:hotelhirondellepog@yahoo.com?subject=Demande%20de%20convention%20entreprise%20-%20H%C3%B4tel%20L'Hirondelle"
+      }
+    },
+    "longStays": {
+      "path": "/longs-sejours",
+      "seo": {
+        "title": "Studios meublés & longs séjours | Hôtel L'Hirondelle Port-Gentil",
+        "description": "Découvrez les studios meublés de l'Hôtel L'Hirondelle pour vos séjours prolongés à Port-Gentil. Demandez un tarif mensuel."
+      },
+      "title": "Restez plus longtemps, en toute simplicité",
+      "description": "Les studios équipés avec kitchenette sont présentés comme une solution pour les missions professionnelles et séjours prolongés.",
+      "features": [
+        "Kitchenette équipée",
+        "Coin repas",
+        "Espace bureau",
+        "Climatisation",
+        "Tarifs mensuels sur demande"
+      ],
+      "pricing": {
+        "monthlyRatesPublished": false,
+        "quoteRequired": true
+      },
+      "cta": {
+        "label": "Demander un tarif long séjour",
+        "action": "whatsapp"
+      }
+    },
+    "gallery": {
+      "path": "/galerie",
+      "seo": {
+        "title": "Galerie photos | Hôtel L'Hirondelle Port-Gentil",
+        "description": "Découvrez en images les chambres, studios, espaces communs et services de l'Hôtel L'Hirondelle à Port-Gentil."
+      },
+      "title": "Découvrez L'Hirondelle en images",
+      "subtitle": "Une galerie de photographies réelles pour préparer votre séjour.",
+      "albums": [
+        {
+          "id": "rooms",
+          "title": "Chambres",
+          "cover": "/images/gallery/chambres-cover.jpg",
+          "images": [
+            "/images/rooms/standard-1.jpg",
+            "/images/rooms/superieure-1.jpg",
+            "/images/rooms/studio-1.jpg",
+            "/images/rooms/suite-1.jpg"
+          ]
+        },
+        {
+          "id": "studios",
+          "title": "Studios & kitchenette",
+          "cover": "/images/gallery/studios-cover.jpg",
+          "images": [
+            "/images/rooms/studio-kitchen.jpg",
+            "/images/rooms/studio-1.jpg"
+          ]
+        },
+        {
+          "id": "restaurant",
+          "title": "Restaurant & espaces de restauration",
+          "cover": "/images/gallery/restaurant-cover.jpg",
+          "images": [
+            "/images/services/restaurant.jpg"
+          ]
+        },
+        {
+          "id": "hotel",
+          "title": "Espaces communs & extérieur",
+          "cover": "/images/gallery/hotel-cover.jpg",
+          "images": [
+            "/images/home/hotel-jardin.jpg",
+            "/images/home/hero-hotel.jpg"
+          ]
+        }
+      ],
+      "imageRules": {
+        "onlyRealPropertyPhotos": true,
+        "allImagesNeedAltText": true,
+        "optimizeWebP": true,
+        "lazyLoadBelowFold": true,
+        "showCaptions": true
+      }
+    },
+    "offers": {
+      "path": "/offres",
+      "seo": {
+        "title": "Offres & formules | Hôtel L'Hirondelle Port-Gentil",
+        "description": "Contactez l'Hôtel L'Hirondelle pour connaître les offres et tarifs applicables à vos dates de séjour."
+      },
+      "title": "Nos offres & formules",
+      "intro": "Les offres sont communiquées en fonction des disponibilités et des périodes. Contactez directement l'hôtel pour obtenir les conditions applicables.",
+      "offers": [],
+      "emptyState": "Aucune offre promotionnelle en cours n'est publiée pour le moment.",
+      "publishingRules": [
+        "Toujours indiquer les dates de validité",
+        "Afficher le prix total et les conditions",
+        "Préciser les services inclus et non inclus",
+        "Ne jamais publier une promotion sans validation de l'hôtel"
+      ]
+    },
+    "contact": {
+      "path": "/contact",
+      "seo": {
+        "title": "Contact, réservation & accès | Hôtel L'Hirondelle Port-Gentil",
+        "description": "Contactez l'Hôtel L'Hirondelle à Port-Gentil par téléphone, WhatsApp ou email. Retrouvez l'adresse et demandez les disponibilités."
+      },
+      "title": "Nous trouver & réserver",
+      "subtitle": "Notre équipe est à votre disposition pour répondre à vos questions et traiter vos demandes de séjour.",
+      "bookingMethods": [
+        {
+          "type": "whatsapp",
+          "label": "Réservation rapide via WhatsApp",
+          "value": "+241 05 94 22 69",
+          "url": "https://wa.me/24105942269"
+        },
+        {
+          "type": "phone",
+          "label": "Standard téléphonique",
+          "value": "+241 11 56 43 37",
+          "url": "tel:+24111564337"
+        },
+        {
+          "type": "email",
+          "label": "Réservation par email",
+          "value": "hotelhirondellepog@yahoo.com",
+          "url": "mailto:hotelhirondellepog@yahoo.com"
+        }
+      ],
+      "form": {
+        "enabled": true,
+        "fields": [
+          {
+            "name": "fullName",
+            "label": "Nom complet",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "label": "Téléphone / WhatsApp",
+            "type": "tel",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Adresse email",
+            "type": "email",
+            "required": false
+          },
+          {
+            "name": "checkIn",
+            "label": "Date d'arrivée",
+            "type": "date",
+            "required": true
+          },
+          {
+            "name": "checkOut",
+            "label": "Date de départ",
+            "type": "date",
+            "required": true
+          },
+          {
+            "name": "roomType",
+            "label": "Type d'hébergement souhaité",
+            "type": "select",
+            "required": true,
+            "optionsSource": "pages.rooms.categories"
+          },
+          {
+            "name": "adults",
+            "label": "Nombre d'adultes",
+            "type": "number",
+            "required": true,
+            "min": 1
+          },
+          {
+            "name": "children",
+            "label": "Nombre d'enfants",
+            "type": "number",
+            "required": false,
+            "min": 0
+          },
+          {
+            "name": "rooms",
+            "label": "Nombre de chambres",
+            "type": "number",
+            "required": true,
+            "min": 1
+          },
+          {
+            "name": "message",
+            "label": "Votre message",
+            "type": "textarea",
+            "required": false
+          },
+          {
+            "name": "privacyConsent",
+            "label": "J'accepte que mes informations soient utilisées pour répondre à ma demande.",
+            "type": "checkbox",
+            "required": true
+          }
+        ],
+        "submitLabel": "Envoyer ma demande",
+        "successMessage": "Votre demande est prête à être transmise. L'hôtel doit vous confirmer la disponibilité et les conditions de réservation.",
+        "errorMessage": "Une erreur est survenue. Vous pouvez contacter directement l'hôtel par téléphone ou WhatsApp.",
+        "delivery": {
+          "primary": "email",
+          "recipient": "hotelhirondellepog@yahoo.com",
+          "fallback": "whatsapp",
+          "requiresBackend": true
+        },
+        "spamProtection": {
+          "enabled": true,
+          "provider": "to_configure"
+        }
+      },
+      "access": {
+        "addressRef": "siteMetadata.location",
+        "showMap": true,
+        "directionsUrlRef": "siteMetadata.location.map.directionsUrl",
+        "proximityRef": "siteMetadata.location.proximityMetrics"
+      },
+      "openingHours": null,
+      "contactNote": "Les horaires de réception et les horaires de réponse aux demandes doivent être confirmés par l'hôtel."
+    },
+    "practicalInfo": {
+      "path": "/informations-pratiques",
+      "seo": {
+        "title": "Informations pratiques & conditions de séjour | Hôtel L'Hirondelle",
+        "description": "Retrouvez les informations pratiques avant votre séjour à l'Hôtel L'Hirondelle à Port-Gentil."
+      },
+      "title": "Informations pratiques",
+      "sections": [
+        {
+          "id": "arrival-departure",
+          "title": "Arrivée & départ",
+          "fields": [
+            {
+              "label": "Heure d'arrivée",
+              "value": null
+            },
+            {
+              "label": "Heure de départ",
+              "value": null
+            },
+            {
+              "label": "Arrivée tardive",
+              "value": null
+            }
+          ],
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "id": "payment",
+          "title": "Paiement & facturation",
+          "fields": [
+            {
+              "label": "Moyens de paiement acceptés",
+              "value": null
+            },
+            {
+              "label": "Acompte",
+              "value": null
+            },
+            {
+              "label": "Facture entreprise",
+              "value": null
+            },
+            {
+              "label": "Taxes et frais éventuels",
+              "value": null
+            }
+          ],
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "id": "cancellation",
+          "title": "Modification & annulation",
+          "fields": [
+            {
+              "label": "Délai d'annulation",
+              "value": null
+            },
+            {
+              "label": "Remboursement",
+              "value": null
+            },
+            {
+              "label": "Non-présentation",
+              "value": null
+            }
+          ],
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "id": "children",
+          "title": "Enfants & lits supplémentaires",
+          "fields": [
+            {
+              "label": "Politique enfants",
+              "value": null
+            },
+            {
+              "label": "Lits bébé",
+              "value": null
+            },
+            {
+              "label": "Lits supplémentaires",
+              "value": null
+            }
+          ],
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "id": "pets",
+          "title": "Animaux",
+          "fields": [
+            {
+              "label": "Animaux acceptés",
+              "value": null
+            },
+            {
+              "label": "Conditions ou frais",
+              "value": null
+            }
+          ],
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "id": "accessibility",
+          "title": "Accessibilité",
+          "fields": [
+            {
+              "label": "Accès sans marches",
+              "value": null
+            },
+            {
+              "label": "Chambres adaptées",
+              "value": null
+            },
+            {
+              "label": "Ascenseur",
+              "value": null
+            }
+          ],
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "id": "smoking-visitors",
+          "title": "Règles de séjour",
+          "fields": [
+            {
+              "label": "Politique tabac",
+              "value": null
+            },
+            {
+              "label": "Visiteurs extérieurs",
+              "value": null
+            },
+            {
+              "label": "Heures de calme",
+              "value": null
+            }
+          ],
+          "status": "needs_hotel_confirmation"
+        }
+      ],
+      "publicationRule": "Masquer chaque information non renseignée ; ne pas afficher de règles par défaut qui n'ont pas été validées par la direction."
+    },
+    "faq": {
+      "path": "/faq",
+      "seo": {
+        "title": "Questions fréquentes | Hôtel L'Hirondelle Port-Gentil",
+        "description": "Questions fréquentes sur les chambres, studios, réservations et services de l'Hôtel L'Hirondelle."
+      },
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "question": "Comment vérifier les disponibilités ?",
+          "answer": "Envoyez une demande via le formulaire, WhatsApp ou email. L'équipe de l'hôtel devra confirmer la disponibilité avant que la réservation soit considérée comme confirmée.",
+          "status": "approved_from_booking_flow"
+        },
+        {
+          "question": "Comment réserver une chambre ?",
+          "answer": "Choisissez votre catégorie d'hébergement et vos dates, puis transmettez votre demande à l'hôtel par le formulaire, WhatsApp ou email.",
+          "status": "approved_from_booking_flow"
+        },
+        {
+          "question": "Proposez-vous des studios avec kitchenette ?",
+          "answer": "Le descriptif initial mentionne des studios équipés d'une kitchenette. Les équipements exacts et les disponibilités doivent être confirmés avec l'hôtel.",
+          "status": "pending_validation"
+        },
+        {
+          "question": "Avez-vous des tarifs pour les longs séjours ?",
+          "answer": "Des tarifs mensuels ou dégressifs sont annoncés sur demande. Contactez l'hôtel pour obtenir une proposition correspondant à vos dates.",
+          "status": "pending_validation"
+        },
+        {
+          "question": "Le petit-déjeuner est-il inclus ?",
+          "answer": null,
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "question": "Quels sont les horaires d'arrivée et de départ ?",
+          "answer": null,
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "question": "Quels moyens de paiement acceptez-vous ?",
+          "answer": null,
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "question": "Quelle est la politique d'annulation ?",
+          "answer": null,
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "question": "La navette aéroport est-elle disponible ?",
+          "answer": null,
+          "status": "needs_hotel_confirmation"
+        },
+        {
+          "question": "Le parking est-il gratuit et sécurisé ?",
+          "answer": null,
+          "status": "needs_hotel_confirmation"
+        }
+      ]
+    },
+    "about": {
+      "path": "/hotel",
+      "seo": {
+        "title": "À propos de l'Hôtel L'Hirondelle | Port-Gentil",
+        "description": "Découvrez l'Hôtel L'Hirondelle, son emplacement et sa vocation d'accueil à Port-Gentil."
+      },
+      "title": "Bienvenue à l'Hôtel L'Hirondelle",
+      "story": null,
+      "mission": null,
+      "values": [
+        "Accueil",
+        "Confort",
+        "Sérénité",
+        "Praticité"
+      ],
+      "note": "Rédiger l'histoire de l'établissement avec la direction avant publication. Ne pas inventer de date de création, de fondateur ou de distinction."
+    },
+    "contactThanks": {
+      "path": "/merci",
+      "noIndex": true,
+      "title": "Merci pour votre demande",
+      "message": "Votre demande a été transmise. La réservation reste en attente de confirmation par l'hôtel."
+    },
+    "notFound": {
+      "path": "/404",
+      "title": "Page introuvable",
+      "message": "Cette page n'existe pas ou a été déplacée.",
+      "cta": {
+        "label": "Retour à l'accueil",
+        "path": "/"
+      }
+    },
+    "legalNotice": {
+      "path": "/mentions-legales",
+      "seo": {
+        "title": "Mentions légales | Hôtel L'Hirondelle",
+        "description": "Informations légales relatives au site de l'Hôtel L'Hirondelle."
+      },
+      "title": "Mentions légales",
+      "status": "draft_required",
+      "sections": [
+        {
+          "title": "Éditeur du site",
+          "fields": [
+            "legalEntityName",
+            "registeredAddress",
+            "registrationNumber",
+            "publicationDirector",
+            "contactEmail"
+          ]
+        },
+        {
+          "title": "Hébergement du site",
+          "fields": [
+            "hostingProvider",
+            "hostingAddress",
+            "hostingContact"
+          ]
+        },
+        {
+          "title": "Propriété intellectuelle",
+          "contentStatus": "to_be_reviewed"
+        }
+      ],
+      "publicationRule": "Remplir avec les informations exactes de l'exploitant et du prestataire d'hébergement avant publication."
+    },
+    "privacy": {
+      "path": "/confidentialite",
+      "seo": {
+        "title": "Politique de confidentialité | Hôtel L'Hirondelle",
+        "description": "Comment l'Hôtel L'Hirondelle collecte et utilise les informations transmises via son site."
+      },
+      "title": "Politique de confidentialité",
+      "status": "draft_required",
+      "sections": [
+        {
+          "title": "Données collectées",
+          "contentStatus": "to_be_written"
+        },
+        {
+          "title": "Finalités et bases de traitement",
+          "contentStatus": "to_be_written"
+        },
+        {
+          "title": "Durées de conservation",
+          "contentStatus": "to_be_written"
+        },
+        {
+          "title": "Destinataires et sous-traitants",
+          "contentStatus": "to_be_written"
+        },
+        {
+          "title": "Droits des personnes et contact",
+          "contentStatus": "to_be_written"
+        },
+        {
+          "title": "Cookies et mesure d'audience",
+          "contentStatus": "to_be_written"
+        }
+      ],
+      "publicationRule": "Faire relire le texte par une personne compétente et le faire correspondre aux traitements réellement activés sur le site."
+    },
+    "cookiePolicy": {
+      "path": "/politique-cookies",
+      "seo": {
+        "title": "Politique de cookies | Hôtel L'Hirondelle",
+        "description": "Informations sur les cookies et traceurs utilisés par le site de l'Hôtel L'Hirondelle."
+      },
+      "title": "Politique de cookies",
+      "status": "draft_required",
+      "sections": [
+        {
+          "title": "Cookies nécessaires",
+          "contentStatus": "to_be_written"
+        },
+        {
+          "title": "Mesure d'audience",
+          "contentStatus": "to_be_written"
+        },
+        {
+          "title": "Marketing et réseaux sociaux",
+          "contentStatus": "to_be_written"
+        },
+        {
+          "title": "Gestion des préférences",
+          "contentStatus": "to_be_written"
+        }
+      ],
+      "publicationRule": "Ne lister que les traceurs réellement utilisés et respecter les choix enregistrés par le visiteur."
+    },
+    "stayTerms": {
+      "path": "/conditions-de-sejour",
+      "seo": {
+        "title": "Conditions de séjour | Hôtel L'Hirondelle",
+        "description": "Conditions de réservation, paiement, modification et séjour à l'Hôtel L'Hirondelle."
+      },
+      "title": "Conditions de séjour",
+      "status": "hotel_terms_required",
+      "sections": [
+        {
+          "title": "Demande et confirmation de réservation",
+          "contentStatus": "to_be_confirmed"
+        },
+        {
+          "title": "Prix, taxes et suppléments",
+          "contentStatus": "to_be_confirmed"
+        },
+        {
+          "title": "Paiement et acompte",
+          "contentStatus": "to_be_confirmed"
+        },
+        {
+          "title": "Modification et annulation",
+          "contentStatus": "to_be_confirmed"
+        },
+        {
+          "title": "Arrivée et départ",
+          "contentStatus": "to_be_confirmed"
+        },
+        {
+          "title": "Règles de l'établissement",
+          "contentStatus": "to_be_confirmed"
+        }
+      ],
+      "publicationRule": "La direction de l'hôtel doit fournir et valider chaque condition avant publication."
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "bookingType": "request_then_manual_confirmation",
+    "liveAvailability": false,
+    "onlinePayment": false,
+    "steps": [
+      {
+        "id": "stay",
+        "title": "Votre séjour",
+        "fields": [
+          "checkIn",
+          "checkOut",
+          "adults",
+          "children",
+          "rooms"
+        ]
+      },
+      {
+        "id": "room",
+        "title": "Votre hébergement",
+        "fields": [
+          "roomCategory"
+        ]
+      },
+      {
+        "id": "guest",
+        "title": "Vos coordonnées",
+        "fields": [
+          "fullName",
+          "phone",
+          "email",
+          "message",
+          "privacyConsent"
+        ]
+      },
+      {
+        "id": "review",
+        "title": "Récapitulatif",
+        "fields": [
+          "bookingSummary",
+          "termsAcknowledgement"
+        ]
+      },
+      {
+        "id": "submitted",
+        "title": "Demande envoyée",
+        "fields": [
+          "reference",
+          "nextSteps"
+        ]
+      }
+    ],
+    "statusFlow": [
+      "draft",
+      "submitted",
+      "awaiting_hotel_confirmation",
+      "confirmed_by_hotel",
+      "declined",
+      "cancelled"
+    ],
+    "confirmationMessage": "Votre demande a bien été reçue. L'équipe de l'hôtel vous contactera pour confirmer les disponibilités, le tarif total et les modalités de réservation.",
+    "referencePrefix": "HIR",
+    "whatsappTemplate": "Bonjour Hôtel L'Hirondelle, je souhaite vérifier une disponibilité. Nom : {{fullName}}. Arrivée : {{checkIn}}. Départ : {{checkOut}}. Hébergement : {{roomCategory}}. Adultes : {{adults}}. Enfants : {{children}}. Chambres : {{rooms}}. Téléphone : {{phone}}.",
+    "emailSubjectTemplate": "Demande de disponibilité - Hôtel L'Hirondelle - {{checkIn}} au {{checkOut}}",
+    "terms": {
+      "showBeforeSubmit": true,
+      "text": "L'envoi de cette demande ne garantit pas la disponibilité ni ne constitue une réservation confirmée. L'hôtel doit confirmer par écrit les dates, le tarif total et les conditions applicables.",
+      "fullTermsPath": "/informations-pratiques"
+    }
+  },
+  "contentManagement": {
+    "editableCollections": [
+      "rooms.categories",
+      "services.sections",
+      "offers.offers",
+      "gallery.albums",
+      "faq.items",
+      "news.items",
+      "testimonials.items"
+    ],
+    "contentStatuses": [
+      "draft",
+      "pending_validation",
+      "approved",
+      "published",
+      "archived"
+    ],
+    "publicationRules": [
+      "Seuls les contenus au statut approved ou published peuvent apparaître publiquement.",
+      "Toute modification de prix doit être validée par la direction.",
+      "Les avis clients doivent provenir d'une source réelle et être affichés avec une attribution exacte.",
+      "Les photographies doivent représenter réellement l'établissement et la catégorie concernée.",
+      "Les offres doivent comporter leurs dates, conditions, limites et prix applicables."
+    ],
+    "news": {
+      "path": "/actualites",
+      "items": [],
+      "enabled": false
+    },
+    "testimonials": {
+      "items": [],
+      "enabled": false,
+      "sourceRequired": true,
+      "fields": [
+        "authorDisplayName",
+        "source",
+        "sourceUrl",
+        "rating",
+        "reviewDate",
+        "quote",
+        "permissionStatus"
+      ]
+    }
+  },
+  "seoAndDiscovery": {
+    "sitemap": {
+      "enabled": true,
+      "include": [
+        "/",
+        "/chambres",
+        "/services",
+        "/affaires",
+        "/longs-sejours",
+        "/galerie",
+        "/offres",
+        "/contact",
+        "/informations-pratiques",
+        "/faq",
+        "/hotel",
+        "/mentions-legales",
+        "/confidentialite",
+        "/politique-cookies",
+        "/conditions-de-sejour"
+      ],
+      "exclude": [
+        "/merci",
+        "/404"
+      ]
+    },
+    "robotsTxt": {
+      "allowPublicPages": true,
+      "disallow": [
+        "/admin",
+        "/api",
+        "/merci"
+      ]
+    },
+    "localSeo": {
+      "businessName": "Hôtel L'Hirondelle",
+      "primaryCategory": "Hotel",
+      "addressRef": "siteMetadata.location",
+      "phoneRef": "siteMetadata.contact.phones[0]",
+      "websiteUrl": null,
+      "googleBusinessProfileUrl": null,
+      "bookingUrl": null,
+      "mapPinMustBeVerified": true
+    },
+    "structuredData": {
+      "organization": true,
+      "hotel": true,
+      "localBusiness": true,
+      "roomOffers": "only_when_rates_verified",
+      "aggregateRating": false,
+      "review": false
+    },
+    "technical": {
+      "canonicalUrls": true,
+      "hreflang": [
+        "fr-GA",
+        "en"
+      ],
+      "breadcrumbs": true,
+      "imageAltText": true,
+      "redirects": [],
+      "custom404": true
+    }
+  },
+  "integrations": {
+    "whatsapp": {
+      "enabled": true,
+      "urlRef": "siteMetadata.contact.whatsapp.url",
+      "prefilledMessage": true
+    },
+    "emailDelivery": {
+      "enabled": true,
+      "provider": "to_configure",
+      "recipient": "hotelhirondellepog@yahoo.com"
+    },
+    "bookingEngine": {
+      "enabled": false,
+      "provider": null,
+      "reason": "Aucun moteur de disponibilité en temps réel ou PMS n'a été fourni."
+    },
+    "paymentGateway": {
+      "enabled": false,
+      "provider": null,
+      "reason": "Activer uniquement après choix du prestataire, validation des devises, frais, remboursements et règles de sécurité."
+    },
+    "googleMaps": {
+      "enabled": true,
+      "apiKeyConfigured": false,
+      "useDirectionsLinkFallback": true
+    },
+    "googleAnalytics": {
+      "enabled": false,
+      "measurementId": null,
+      "requiresConsent": true
+    },
+    "googleTagManager": {
+      "enabled": false,
+      "containerId": null,
+      "requiresConsent": true
+    },
+    "metaPixel": {
+      "enabled": false,
+      "pixelId": null,
+      "requiresConsent": true
+    },
+    "recaptcha": {
+      "enabled": false,
+      "provider": null
+    },
+    "newsletter": {
+      "enabled": false,
+      "provider": null
+    }
+  },
+  "accessibilityAndPerformance": {
+    "accessibilityTarget": "WCAG 2.2 AA as design objective",
+    "requirements": [
+      "navigation clavier",
+      "contraste suffisant",
+      "libellés explicites des formulaires",
+      "textes alternatifs des images",
+      "focus visible",
+      "zones tactiles confortables",
+      "respect de prefers-reduced-motion",
+      "ne pas bloquer le zoom mobile"
+    ],
+    "performance": {
+      "responsiveImages": true,
+      "webpOrAvif": true,
+      "lazyLoadBelowFold": true,
+      "preloadHeroImage": true,
+      "minifyAssets": true,
+      "avoidUnnecessaryThirdPartyScripts": true
+    },
+    "coreWebVitalsTargets": {
+      "LCP": "<= 2.5s",
+      "INP": "<= 200ms",
+      "CLS": "<= 0.1"
+    }
+  },
+  "analyticsEvents": [
+    {
+      "name": "click_whatsapp",
+      "category": "contact",
+      "description": "Clic vers WhatsApp"
+    },
+    {
+      "name": "click_phone",
+      "category": "contact",
+      "description": "Clic pour appeler"
+    },
+    {
+      "name": "click_email",
+      "category": "contact",
+      "description": "Clic vers email"
+    },
+    {
+      "name": "booking_form_start",
+      "category": "booking",
+      "description": "Début de la demande de disponibilité"
+    },
+    {
+      "name": "booking_form_submit",
+      "category": "booking",
+      "description": "Soumission d'une demande de disponibilité"
+    },
+    {
+      "name": "business_quote_submit",
+      "category": "lead",
+      "description": "Demande de devis entreprise"
+    },
+    {
+      "name": "view_room_detail",
+      "category": "engagement",
+      "description": "Consultation d'une fiche chambre"
+    }
+  ],
+  "legalAndPrivacy": {
+    "legalNotice": {
+      "path": "/mentions-legales",
+      "status": "draft_required",
+      "requiredFields": [
+        "legalEntityName",
+        "registeredAddress",
+        "registrationNumber",
+        "publicationDirector",
+        "hostingProvider",
+        "contactEmail"
+      ]
+    },
+    "privacyPolicy": {
+      "path": "/confidentialite",
+      "status": "draft_required",
+      "mustDescribe": [
+        "dataCollected",
+        "purposes",
+        "legalBasis",
+        "retentionPeriod",
+        "recipients",
+        "userRights",
+        "contactForRequests",
+        "cookies",
+        "analytics",
+        "thirdPartyServices"
+      ]
+    },
+    "termsOfStay": {
+      "path": "/conditions-de-sejour",
+      "status": "hotel_terms_required",
+      "mustConfirmWithHotel": [
+        "bookingTerms",
+        "paymentTerms",
+        "cancellation",
+        "noShow",
+        "deposit",
+        "taxes",
+        "houseRules",
+        "liability"
+      ]
+    },
+    "cookiePolicy": {
+      "path": "/politique-cookies",
+      "status": "draft_required"
+    }
+  },
+  "mediaLibrary": {
+    "directories": [
+      "/images/brand",
+      "/images/home",
+      "/images/rooms",
+      "/images/services",
+      "/images/business",
+      "/images/gallery",
+      "/images/og",
+      "/videos"
+    ],
+    "requiredAssets": [
+      {
+        "path": "/images/brand/logo-hirondelle.svg",
+        "description": "Logo officiel en vectoriel",
+        "priority": "high"
+      },
+      {
+        "path": "/images/home/hero-hotel.jpg",
+        "description": "Photo réelle et horizontale de la façade ou de l'espace extérieur",
+        "priority": "critical"
+      },
+      {
+        "path": "/images/rooms/standard-1.jpg",
+        "description": "Photo réelle de la chambre standard",
+        "priority": "critical"
+      },
+      {
+        "path": "/images/rooms/superieure-1.jpg",
+        "description": "Photo réelle de la chambre supérieure",
+        "priority": "high"
+      },
+      {
+        "path": "/images/rooms/studio-1.jpg",
+        "description": "Photo réelle du studio",
+        "priority": "critical"
+      },
+      {
+        "path": "/images/rooms/studio-kitchen.jpg",
+        "description": "Photo réelle de la kitchenette",
+        "priority": "high"
+      },
+      {
+        "path": "/images/rooms/suite-1.jpg",
+        "description": "Photo réelle de la suite",
+        "priority": "high"
+      },
+      {
+        "path": "/images/services/restaurant.jpg",
+        "description": "Photo réelle du restaurant ou de la terrasse",
+        "priority": "medium"
+      },
+      {
+        "path": "/images/home/hotel-jardin.jpg",
+        "description": "Photo réelle du jardin ou des espaces extérieurs",
+        "priority": "high"
+      }
+    ],
+    "video": {
+      "enabled": true,
+      "path": null,
+      "poster": "/images/home/video-poster.jpg",
+      "autoplay": false,
+      "muted": true,
+      "captionsRequired": true
+    }
+  },
+  "validationChecklist": [
+    {
+      "id": "identity",
+      "item": "Confirmer le nom commercial officiel, le logo et le domaine du site",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "address",
+      "item": "Confirmer l'adresse, les coordonnées GPS et le repère Carrefour des Douanes",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "phone",
+      "item": "Tester les trois numéros et confirmer lequel reçoit les réservations",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "socials",
+      "item": "Confirmer les URL des pages Facebook et Instagram officielles",
+      "priority": "high",
+      "status": "to_confirm"
+    },
+    {
+      "id": "capacity",
+      "item": "Confirmer le nombre total de chambres et la répartition réelle par catégorie",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "prices",
+      "item": "Confirmer tous les tarifs, leur unité, les taxes, suppléments et inclusions",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "rooms",
+      "item": "Confirmer superficies, lits, capacité, équipements et photos pour chaque catégorie",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "breakfast",
+      "item": "Confirmer si le petit-déjeuner est inclus, optionnel ou payant selon les tarifs",
+      "priority": "high",
+      "status": "to_confirm"
+    },
+    {
+      "id": "restaurant",
+      "item": "Confirmer que le restaurant et le bar sont ouverts, leurs horaires, menus et conditions d'accès",
+      "priority": "high",
+      "status": "to_confirm"
+    },
+    {
+      "id": "services",
+      "item": "Confirmer navette, blanchisserie, parking, réception 24h/24, Wi-Fi, groupe électrogène et réserve d'eau",
+      "priority": "high",
+      "status": "to_confirm"
+    },
+    {
+      "id": "meeting",
+      "item": "Confirmer disponibilité et capacité des salles de réunion ainsi que les équipements",
+      "priority": "medium",
+      "status": "to_confirm"
+    },
+    {
+      "id": "policies",
+      "item": "Renseigner les heures d'arrivée/départ, paiements, annulations, enfants, animaux et accessibilité",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "reviews",
+      "item": "Obtenir les liens d'avis authentiques et autorisations de citation si nécessaire",
+      "priority": "high",
+      "status": "to_confirm"
+    },
+    {
+      "id": "booking",
+      "item": "Choisir entre demandes WhatsApp/email et moteur de réservation avec disponibilités en temps réel",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "photos",
+      "item": "Remplacer tous les chemins images de démonstration par les photos réelles de l'hôtel",
+      "priority": "critical",
+      "status": "to_confirm"
+    },
+    {
+      "id": "legal",
+      "item": "Fournir les informations légales de l'exploitant et valider les textes de confidentialité",
+      "priority": "high",
+      "status": "to_confirm"
+    },
+    {
+      "id": "english",
+      "item": "Traduire et relire toutes les pages anglaises avant d'activer la langue EN",
+      "priority": "medium",
+      "status": "to_confirm"
+    }
+  ],
+  "implementationNotes": {
+    "recommendedArchitecture": "Frontend responsive piloté par ce fichier de contenu, avec un backend sécurisé pour traiter les formulaires et les demandes de réservation.",
+    "criticalFunctionalRequirements": [
+      "Le formulaire doit valider les dates et empêcher un départ antérieur ou égal à l'arrivée.",
+      "Les demandes de réservation doivent être envoyées au serveur, journalisées et transmises à l'hôtel ; ne pas mettre les clés email/API dans le navigateur.",
+      "Le site ne doit jamais afficher 'réservation confirmée' avant une confirmation explicite de l'hôtel ou du moteur de réservation.",
+      "Le prix total et les conditions doivent être présentés avant toute étape de paiement lorsqu'un paiement en ligne sera ajouté.",
+      "Toutes les pages doivent être utilisables sur mobile, clavier et lecteur d'écran.",
+      "Les contenus en statut pending_validation ou needs_hotel_confirmation doivent être masqués du site public."
+    ],
+    "deploymentChecklist": [
+      "Configurer le nom de domaine et HTTPS",
+      "Configurer l'hébergement et les sauvegardes",
+      "Configurer l'envoi email",
+      "Configurer analytics avec consentement",
+      "Créer sitemap.xml et robots.txt",
+      "Tester formulaires et notifications",
+      "Tester les pages sur smartphone",
+      "Vérifier les métadonnées SEO",
+      "Vérifier les liens de contact",
+      "Mettre en place une sauvegarde et une procédure de mise à jour"
+    ]
+  }
+}
