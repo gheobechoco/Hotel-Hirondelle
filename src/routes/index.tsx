@@ -1,23 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
-
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+import { createFileRoute,Link } from '@tanstack/react-router';
+import { useState } from 'react';
+import { ArrowUpRight,ArrowDown,Bird,MapPin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Select,SelectContent,SelectItem,SelectTrigger,SelectValue } from '@/components/ui/select';
+import { HotelDate } from '@/components/hotel-date';
+import { useBooking,StayCta } from '@/components/hotel-shell';
+import { hotelHead,photos,categories } from '@/lib/hotel';
+export const Route=createFileRoute('/')({component:Index,head:()=>hotelHead('Hôtel L’Hirondelle | Hôtel & Studios à Port-Gentil','Découvrez l’Hôtel L’Hirondelle à Port-Gentil et préparez votre séjour avec une demande de disponibilité.')});
+function Index(){const booking=useBooking();const [checkIn,setIn]=useState('');const [checkOut,setOut]=useState('');const [adults,setAdults]=useState('1');return <><section className="hotel-hero"><img src={photos[0].url} alt={photos[0].alt} fetchPriority="high"/><div className="hero-copy"><div className="eyebrow">Une parenthèse à Port-Gentil, Gabon</div><div className="hero-rule"/><h1>Hôtel L’Hirondelle</h1><p>Le temps d’une escale ou d’un séjour prolongé,<br/>retrouvez le plaisir de vous sentir ailleurs.</p><div className="flex gap-3 justify-center flex-wrap"><Button variant="hotel" onClick={()=>booking()}>Préparer mon séjour<ArrowUpRight/></Button><Button variant="hero" asChild><Link to="/chambres">Découvrir les hébergements</Link></Button></div></div><div className="hero-bottom"><span className="flex items-center gap-2"><MapPin size={12}/>PORT-GENTIL · GABON</span><span className="flex gap-2 items-center">L’ESPRIT L’HIRONDELLE<ArrowDown size={13}/></span></div></section><div className="site-width booking-strip"><div><label>Votre arrivée</label><HotelDate value={checkIn} onChange={setIn} label="Votre arrivée"/></div><div><label>Votre départ</label><HotelDate value={checkOut} onChange={setOut} label="Votre départ"/></div><div><label>Voyageurs</label><Select value={adults} onValueChange={setAdults}><SelectTrigger className="border-0 shadow-none px-0" aria-label="Voyageurs"><SelectValue/></SelectTrigger><SelectContent>{[1,2,3,4,5,6].map(n=><SelectItem value={String(n)} key={n}>{n} adulte{n>1?'s':''}</SelectItem>)}</SelectContent></Select></div><Button className="h-12" onClick={()=>booking({checkIn,checkOut,adults:Number(adults)})}>Vérifier les disponibilités<ArrowUpRight/></Button></div><section className="section site-width intro-grid"><div><div className="section-label">Bienvenue à L’Hirondelle</div><h2>Une adresse.<br/>Votre parenthèse.</h2><p>À Port-Gentil, L’Hirondelle vous invite à prendre le temps. Une escale personnelle, quelques nuits entre deux rendez-vous ou une mission qui se prolonge : chaque séjour a son rythme.</p><p>Découvrez l’établissement en images et préparez votre venue avec une demande adaptée à vos dates.</p><Button variant="link" asChild className="px-0 mt-2"><Link to="/hotel">L’esprit de l’hôtel<ArrowUpRight/></Link></Button><div className="signature"><Bird className="text-gold" strokeWidth={1}/>Au plaisir de vous accueillir.</div></div><div className="intro-images"><img className="main-photo" src={photos[2].url} alt={photos[2].alt} loading="lazy"/><img className="detail-photo" src={photos[3].url} alt={photos[3].alt} loading="lazy"/></div></section><section className="section rooms-band"><div className="site-width"><div className="section-heading"><div><div className="section-label">Chambres & studios</div><h2>À chacun son séjour.</h2></div><Button variant="link" asChild><Link to="/chambres">Tous les hébergements<ArrowUpRight/></Link></Button></div><img className="room-photo" src={photos[1].url} alt={photos[1].alt} loading="lazy"/><div className="category-list">{categories.map((c,i)=><div className="category-item" key={c}><span className="number">0{i+1}</span><h3>{c}</h3><Button variant="link" className="px-0 text-xs" onClick={()=>booking({roomCategory:c})}>Faire une demande<ArrowUpRight/></Button></div>)}</div></div></section><section className="section site-width"><div className="section-heading"><div><div className="section-label">Instantanés de L’Hirondelle</div><h2>Un premier regard.</h2></div><Button variant="link" asChild><Link to="/galerie">Explorer la galerie<ArrowUpRight/></Link></Button></div><div className="gallery-grid">{[photos[0],photos[4],photos[2]].map(p=><img key={p.url} className="gallery-photo" src={p.url} alt={p.alt} loading="lazy"/>)}</div></section><StayCta/></>;}
