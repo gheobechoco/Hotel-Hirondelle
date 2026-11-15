@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as R404RouteImport } from './routes/404'
 import { Route as AffairesRouteImport } from './routes/affaires'
 import { Route as ChambresRouteImport } from './routes/chambres'
 import { Route as ConditionsDeSejourRouteImport } from './routes/conditions-de-sejour'
@@ -21,6 +22,7 @@ import { Route as HotelRouteImport } from './routes/hotel'
 import { Route as InformationsPratiquesRouteImport } from './routes/informations-pratiques'
 import { Route as LongsSejoursRouteImport } from './routes/longs-sejours'
 import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
+import { Route as MerciRouteImport } from './routes/merci'
 import { Route as OffresRouteImport } from './routes/offres'
 import { Route as PolitiqueCookiesRouteImport } from './routes/politique-cookies'
 import { Route as ServicesRouteImport } from './routes/services'
@@ -28,6 +30,11 @@ import { Route as ServicesRouteImport } from './routes/services'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const R404Route = R404RouteImport.update({
+  id: '/404',
+  path: '/404',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AffairesRoute = AffairesRouteImport.update({
@@ -85,6 +92,11 @@ const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
   path: '/mentions-legales',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MerciRoute = MerciRouteImport.update({
+  id: '/merci',
+  path: '/merci',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OffresRoute = OffresRouteImport.update({
   id: '/offres',
   path: '/offres',
@@ -103,6 +115,7 @@ const ServicesRoute = ServicesRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/404': typeof R404Route
   '/affaires': typeof AffairesRoute
   '/chambres': typeof ChambresRoute
   '/conditions-de-sejour': typeof ConditionsDeSejourRoute
@@ -114,12 +127,14 @@ export interface FileRoutesByFullPath {
   '/informations-pratiques': typeof InformationsPratiquesRoute
   '/longs-sejours': typeof LongsSejoursRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/merci': typeof MerciRoute
   '/offres': typeof OffresRoute
   '/politique-cookies': typeof PolitiqueCookiesRoute
   '/services': typeof ServicesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/404': typeof R404Route
   '/affaires': typeof AffairesRoute
   '/chambres': typeof ChambresRoute
   '/conditions-de-sejour': typeof ConditionsDeSejourRoute
@@ -131,6 +146,7 @@ export interface FileRoutesByTo {
   '/informations-pratiques': typeof InformationsPratiquesRoute
   '/longs-sejours': typeof LongsSejoursRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/merci': typeof MerciRoute
   '/offres': typeof OffresRoute
   '/politique-cookies': typeof PolitiqueCookiesRoute
   '/services': typeof ServicesRoute
@@ -138,6 +154,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/404': typeof R404Route
   '/affaires': typeof AffairesRoute
   '/chambres': typeof ChambresRoute
   '/conditions-de-sejour': typeof ConditionsDeSejourRoute
@@ -149,6 +166,7 @@ export interface FileRoutesById {
   '/informations-pratiques': typeof InformationsPratiquesRoute
   '/longs-sejours': typeof LongsSejoursRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/merci': typeof MerciRoute
   '/offres': typeof OffresRoute
   '/politique-cookies': typeof PolitiqueCookiesRoute
   '/services': typeof ServicesRoute
@@ -157,6 +175,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/404'
     | '/affaires'
     | '/chambres'
     | '/conditions-de-sejour'
@@ -168,12 +187,14 @@ export interface FileRouteTypes {
     | '/informations-pratiques'
     | '/longs-sejours'
     | '/mentions-legales'
+    | '/merci'
     | '/offres'
     | '/politique-cookies'
     | '/services'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/404'
     | '/affaires'
     | '/chambres'
     | '/conditions-de-sejour'
@@ -185,12 +206,14 @@ export interface FileRouteTypes {
     | '/informations-pratiques'
     | '/longs-sejours'
     | '/mentions-legales'
+    | '/merci'
     | '/offres'
     | '/politique-cookies'
     | '/services'
   id:
     | '__root__'
     | '/'
+    | '/404'
     | '/affaires'
     | '/chambres'
     | '/conditions-de-sejour'
@@ -202,6 +225,7 @@ export interface FileRouteTypes {
     | '/informations-pratiques'
     | '/longs-sejours'
     | '/mentions-legales'
+    | '/merci'
     | '/offres'
     | '/politique-cookies'
     | '/services'
@@ -209,6 +233,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  R404Route: typeof R404Route
   AffairesRoute: typeof AffairesRoute
   ChambresRoute: typeof ChambresRoute
   ConditionsDeSejourRoute: typeof ConditionsDeSejourRoute
@@ -220,6 +245,7 @@ export interface RootRouteChildren {
   InformationsPratiquesRoute: typeof InformationsPratiquesRoute
   LongsSejoursRoute: typeof LongsSejoursRoute
   MentionsLegalesRoute: typeof MentionsLegalesRoute
+  MerciRoute: typeof MerciRoute
   OffresRoute: typeof OffresRoute
   PolitiqueCookiesRoute: typeof PolitiqueCookiesRoute
   ServicesRoute: typeof ServicesRoute
@@ -232,6 +258,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/404': {
+      id: '/404'
+      path: '/404'
+      fullPath: '/404'
+      preLoaderRoute: typeof R404RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/affaires': {
@@ -311,6 +344,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MentionsLegalesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/merci': {
+      id: '/merci'
+      path: '/merci'
+      fullPath: '/merci'
+      preLoaderRoute: typeof MerciRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/offres': {
       id: '/offres'
       path: '/offres'
@@ -337,6 +377,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  R404Route: R404Route,
   AffairesRoute: AffairesRoute,
   ChambresRoute: ChambresRoute,
   ConditionsDeSejourRoute: ConditionsDeSejourRoute,
@@ -348,6 +389,7 @@ const rootRouteChildren: RootRouteChildren = {
   InformationsPratiquesRoute: InformationsPratiquesRoute,
   LongsSejoursRoute: LongsSejoursRoute,
   MentionsLegalesRoute: MentionsLegalesRoute,
+  MerciRoute: MerciRoute,
   OffresRoute: OffresRoute,
   PolitiqueCookiesRoute: PolitiqueCookiesRoute,
   ServicesRoute: ServicesRoute,
