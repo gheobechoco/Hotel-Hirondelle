@@ -235,7 +235,7 @@
  .hotel-hero { height:570px; } .hero-copy h1 { font-size:46px; } .hero-copy { padding:22px; } .hero-copy p { font-size:12px; } .hero-bottom { bottom:40px; left:18px; right:18px; font-size:9px; }
  .booking-strip { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 8px; padding:18px 10px; } .booking-strip > div { padding:0 8px; min-width:0; } .booking-strip > div:nth-child(2) { border:0; } .booking-strip > button { grid-column:1/-1; width:100%; } .booking-strip button { font-size:12px; }
  .section { padding-block:56px; } .section h2,.page-title { font-size:33px; } .intro-grid { grid-template-columns:1fr; gap:32px; } .intro-images { height:310px; padding-right:60px; } .intro-images .detail-photo { width:145px; height:175px; }
- .category-list { grid-template-columns:1fr 1fr; gap:24px; } .category-item h3 { font-size:23px; } .section-heading { align-items:start; gap:16px; flex-direction:column; } .room-photo { height:260px; }
+ .category-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } .category-item button { white-space:normal; height:auto; text-align:left; } .category-item h3 { font-size:23px; } .section-heading { align-items:start; gap:16px; flex-direction:column; } .room-photo { height:260px; }
  .gallery-grid { grid-template-columns:1fr 1fr; } .gallery-photo { height:200px; } .footer-grid { grid-template-columns:1fr 1fr; gap:32px; } .footer-grid > :first-child { grid-column:1/-1; } .footer-bottom { gap:20px; flex-direction:column; }
  .page-banner { padding-block:40px; } .form-grid { gap:14px; } .cta-band h2 { font-size:33px; } .whatsapp-pending { right:18px; bottom:18px; }
 }
