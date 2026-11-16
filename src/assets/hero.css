@@ -1,0 +1,36 @@
+/* Hôtel L’Hirondelle – hero (diaporama animé). Préfixe « hh- » : aucun conflit avec le reste du site.
+   Les couleurs reprennent vos variables --bg, --card, --ink, --mu, --ln, --ac si elles existent. */
+.hh{--hh-bg:var(--bg,#F9FAFB);--hh-card:var(--card,#fff);--hh-ink:var(--ink,#1A202C);--hh-mu:var(--mu,#4A5568);--hh-ln:var(--ln,#E2E8F0);--hh-ac:var(--ac,#D69E2E);--hh-on:#fff;
+--hh-t0:#1E4D3B;--hh-t1:#B7791F;--hh-t2:#2B6CB0;--hh-t3:#2F6F56;--hh-t4:#4A5568;--hh-tint:var(--hh-t0);
+position:relative;overflow:hidden;background:var(--hh-bg);color:var(--hh-ink);padding:48px 0 36px;font-family:var(--sans,"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif);line-height:1.6}
+@media (prefers-color-scheme:dark){.hh{--hh-bg:var(--bg,#101513);--hh-card:var(--card,#1d2622);--hh-ink:var(--ink,#eef3f0);--hh-mu:var(--mu,#a9b6af);--hh-ln:var(--ln,#2d3a35);--hh-ac:var(--ac,#e5b04a);--hh-on:#0e1d16;--hh-t0:#7fc7a4;--hh-t1:#e5b04a;--hh-t2:#8cbcf0;--hh-t3:#9bd8b9;--hh-t4:#b3bdc9}}
+.hh *,.hh *::before,.hh *::after{box-sizing:border-box}
+.hh[data-i="0"]{--hh-tint:var(--hh-t0)}.hh[data-i="1"]{--hh-tint:var(--hh-t1)}.hh[data-i="2"]{--hh-tint:var(--hh-t2)}.hh[data-i="3"]{--hh-tint:var(--hh-t3)}.hh[data-i="4"]{--hh-tint:var(--hh-t4)}
+.hh-wrap{position:relative;width:min(1120px,100% - 40px);margin-inline:auto}
+.hh-arc{position:absolute;border-radius:50%;border:clamp(40px,9vw,110px) solid var(--hh-tint);opacity:.17;pointer-events:none;transition:border-color .9s}
+.hh-arc.a{width:120vmin;height:120vmin;left:-32vmin;top:-72vmin}.hh-arc.b{width:90vmin;height:90vmin;right:-34vmin;bottom:-46vmin}
+.hh-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;min-height:min(62vh,540px)}
+.hh-plates{position:relative;width:min(100%,500px);aspect-ratio:1;margin-inline:auto}
+.hh-plate{position:absolute;inset:0;margin:0;border-radius:50%;overflow:hidden;border:8px solid var(--hh-card);box-shadow:0 26px 50px rgba(0,0,0,.22);opacity:0;transform:translate(14%,-135%) rotate(26deg) scale(.3);transition:transform 1s cubic-bezier(.22,1,.36,1),opacity .7s}
+.hh-plate img{display:block;width:100%;height:100%;object-fit:cover}
+.hh-plate.in{opacity:1;transform:none;z-index:2}.hh-plate.out{opacity:0;transform:translate(-95%,-65%) rotate(-30deg) scale(.35)}
+.hh-copies{display:grid}
+.hh-copy{grid-area:1/1;visibility:hidden;opacity:0;transform:translateX(56px);transition:opacity .5s,transform .8s cubic-bezier(.22,1,.36,1),visibility 0s .8s}
+.hh-copy.in{visibility:visible;opacity:1;transform:none;transition-delay:.15s,.15s,0s}.hh-copy.out{transform:translateX(-56px)}
+.hh-ttl{margin:0 0 24px;text-transform:uppercase;font-size:clamp(2rem,4.2vw,3.7rem);line-height:1;letter-spacing:-.02em}
+.hh-ttl span,.hh-ttl strong{display:block}.hh-ttl span{font-weight:300}.hh-ttl strong{font-weight:800}
+.hh-card{display:flex;gap:18px;align-items:center;max-width:470px;padding:16px;border-radius:8px;background:var(--hh-card);border:1px solid var(--hh-ln);margin-bottom:26px}
+.hh-badge{flex:none;min-width:98px;padding:18px 12px;border-radius:8px;background:var(--hh-tint);color:var(--hh-on);text-align:center;font-size:1.4rem;font-weight:800;line-height:1;transition:background .9s}
+.hh-card p{margin:0;font-size:.93rem;color:var(--hh-mu)}.hh-card b{color:var(--hh-ink)}
+.hh-acts{margin:0}
+.hh-btn{display:inline-block;padding:12px 24px;border-radius:8px;background:var(--hh-ac);color:#1A202C;font:600 .98rem/1.2 inherit;font-family:inherit;text-decoration:none;border:0;cursor:pointer}
+.hh-btn.ghost{background:transparent;color:var(--hh-ink);border:1.5px solid currentColor;margin-left:8px}
+.hh-ctrl{display:flex;align-items:center;gap:14px;margin-top:20px}.hh-thumbs{display:flex;gap:12px}
+.hh-th{width:60px;height:60px;padding:3px;border:0;border-radius:50%;background:transparent;cursor:pointer;opacity:.7;transition:transform .4s,background .6s,opacity .4s}
+.hh-th img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}.hh-th[aria-current="true"]{background:var(--hh-tint);opacity:1;transform:scale(1.14)}
+.hh-ic{width:44px;height:44px;border-radius:50%;border:1px solid var(--hh-ln);background:var(--hh-card);color:var(--hh-ink);font:500 1.4rem/1 inherit;font-family:inherit;cursor:pointer}
+.hh-ic.hh-pp{width:auto;padding:0 16px;font-size:.9rem;margin-left:auto}
+.hh :focus-visible{outline:3px solid var(--hh-ac);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.hh-plate,.hh-copy,.hh-arc,.hh-badge,.hh-th{transition:none!important}}
+@media (max-width:900px){.hh-grid{grid-template-columns:1fr;gap:28px;min-height:0}.hh-plates{width:min(100%,330px)}.hh-copies{min-height:330px}
+.hh-thumbs{gap:6px}.hh-th{width:46px;height:46px}.hh-pp{display:none}.hh-btn.ghost{margin:10px 0 0}}

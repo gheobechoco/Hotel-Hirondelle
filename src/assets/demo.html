@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Démo du hero – Hôtel L’Hirondelle</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="hero.css"><style>body{margin:0}</style></head>
+<body>
+<!-- Hero réutilisable : les photos et les textes sont créés par hero.js. -->
+<section class="hh" id="hero" data-i="0" aria-roledescription="carrousel" aria-label="Découvrir l’hôtel">
+  <span class="hh-arc a"></span><span class="hh-arc b"></span>
+  <div class="hh-wrap">
+    <div class="hh-grid"><div class="hh-plates"></div><div class="hh-copies"></div></div>
+    <div class="hh-ctrl">
+      <button class="hh-ic" type="button" data-hh="prev" aria-label="Diapositive précédente">‹</button>
+      <div class="hh-thumbs"></div>
+      <button class="hh-ic" type="button" data-hh="next" aria-label="Diapositive suivante">›</button>
+      <button class="hh-ic hh-pp" type="button" data-hh="pp">Pause</button>
+    </div>
+  </div>
+</section>
+
+<script type="module">
+  import { initHero } from "./hero.js";
+  document.querySelectorAll(".hh").forEach(initHero);
+</script>
+</body></html>
