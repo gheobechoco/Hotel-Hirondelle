@@ -1,0 +1,6 @@
+import {createFileRoute} from '@tanstack/react-router';
+import {PageBanner} from '@/components/hotel-pages';
+import {StayCta} from '@/components/hotel-shell';
+import {hotelHead,buvette,hall} from '@/lib/hotel';
+export const Route=createFileRoute('/restauration')({component:Page,head:()=>hotelHead('Restauration | Hôtel L’Hirondelle','Petit-déjeuner, buvette et moments gourmands à l’Hôtel L’Hirondelle, Port-Gentil.')});
+function Page(){return <><PageBanner title="Restauration" description="Une pause gourmande, sans quitter l’hôtel."/><section className="section site-width intro-grid"><div><div className="section-label">À table</div><h2>Le goût<br/>de l’escale.</h2><p>Entre deux rendez-vous ou au retour d’une journée à Port-Gentil, l’espace buvette de L’Hirondelle vous accueille pour un moment de détente.</p><p>Les formules, la carte et les horaires de service sont en cours de validation par la direction. Précisez vos souhaits dans votre demande de séjour.</p></div><img src={buvette.url} alt={buvette.alt} className="w-full max-h-[440px] object-cover"/></section><section className="parallax-band" style={{backgroundImage:`url(${hall.url})`}} role="img" aria-label={hall.alt}><div className="parallax-copy"><div className="section-label">L’Hirondelle</div><h2>Prenez le temps.</h2></div></section><StayCta/></>;}
