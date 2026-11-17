@@ -8,6 +8,15 @@ import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Dialog,DialogContent,DialogTitle } from '@/components/ui/dialog';
 import { photos,categories } from '@/lib/hotel';
+import chambreImg from '@/assets/hirondeelle-chambre1.jpg';
+import receptionImg from '@/assets/hotel-hirondelle-vue-reception.jpg';
+import baieImg from '@/assets/hotel-hironedlle-vue-baie-vitre.jpg';
+import balconImg from '@/assets/hirondelle-balcon-vue-bas.jpg';
+import batimentImg from '@/assets/hotel-hirondelle-vue-batiment et chambre-exterieure.jpg';
+import etagesImg from '@/assets/hotel-hirondelle-vue-etages1.jpg';
+import natureImg from '@/assets/hotel-hirondeele-nature.jpg';
+import receptionExtImg from '@/assets/hotel-hirondelle-vue-reception-exterieur.jpg';
+export function ParallaxBand({image,alt,label,title}:{image:string;alt:string;label:string;title:string}){return <section className="parallax-band" style={{backgroundImage:`url(${image})`}} role="img" aria-label={alt}><div className="parallax-copy"><div className="section-label">{label}</div><h2>{title}</h2></div></section>;}
 import { submitRequest } from '@/lib/requests.functions';
 import { requestSchema } from '@/lib/request-schema';
 import { useBooking,StayCta } from './hotel-shell';
