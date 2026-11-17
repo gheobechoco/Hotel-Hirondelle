@@ -25,6 +25,7 @@ import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
 import { Route as MerciRouteImport } from './routes/merci'
 import { Route as OffresRouteImport } from './routes/offres'
 import { Route as PolitiqueCookiesRouteImport } from './routes/politique-cookies'
+import { Route as RestaurationRouteImport } from './routes/restauration'
 import { Route as ServicesRouteImport } from './routes/services'
 
 const IndexRoute = IndexRouteImport.update({
@@ -107,6 +108,11 @@ const PolitiqueCookiesRoute = PolitiqueCookiesRouteImport.update({
   path: '/politique-cookies',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RestaurationRoute = RestaurationRouteImport.update({
+  id: '/restauration',
+  path: '/restauration',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
@@ -130,6 +136,7 @@ export interface FileRoutesByFullPath {
   '/merci': typeof MerciRoute
   '/offres': typeof OffresRoute
   '/politique-cookies': typeof PolitiqueCookiesRoute
+  '/restauration': typeof RestaurationRoute
   '/services': typeof ServicesRoute
 }
 export interface FileRoutesByTo {
@@ -149,6 +156,7 @@ export interface FileRoutesByTo {
   '/merci': typeof MerciRoute
   '/offres': typeof OffresRoute
   '/politique-cookies': typeof PolitiqueCookiesRoute
+  '/restauration': typeof RestaurationRoute
   '/services': typeof ServicesRoute
 }
 export interface FileRoutesById {
@@ -169,6 +177,7 @@ export interface FileRoutesById {
   '/merci': typeof MerciRoute
   '/offres': typeof OffresRoute
   '/politique-cookies': typeof PolitiqueCookiesRoute
+  '/restauration': typeof RestaurationRoute
   '/services': typeof ServicesRoute
 }
 export interface FileRouteTypes {
@@ -190,6 +199,7 @@ export interface FileRouteTypes {
     | '/merci'
     | '/offres'
     | '/politique-cookies'
+    | '/restauration'
     | '/services'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -209,6 +219,7 @@ export interface FileRouteTypes {
     | '/merci'
     | '/offres'
     | '/politique-cookies'
+    | '/restauration'
     | '/services'
   id:
     | '__root__'
@@ -228,6 +239,7 @@ export interface FileRouteTypes {
     | '/merci'
     | '/offres'
     | '/politique-cookies'
+    | '/restauration'
     | '/services'
   fileRoutesById: FileRoutesById
 }
@@ -248,6 +260,7 @@ export interface RootRouteChildren {
   MerciRoute: typeof MerciRoute
   OffresRoute: typeof OffresRoute
   PolitiqueCookiesRoute: typeof PolitiqueCookiesRoute
+  RestaurationRoute: typeof RestaurationRoute
   ServicesRoute: typeof ServicesRoute
 }
 
@@ -365,6 +378,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PolitiqueCookiesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/restauration': {
+      id: '/restauration'
+      path: '/restauration'
+      fullPath: '/restauration'
+      preLoaderRoute: typeof RestaurationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
@@ -392,6 +412,7 @@ const rootRouteChildren: RootRouteChildren = {
   MerciRoute: MerciRoute,
   OffresRoute: OffresRoute,
   PolitiqueCookiesRoute: PolitiqueCookiesRoute,
+  RestaurationRoute: RestaurationRoute,
   ServicesRoute: ServicesRoute,
 }
 export const routeTree = rootRouteImport
