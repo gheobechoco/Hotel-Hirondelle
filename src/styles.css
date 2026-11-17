@@ -250,3 +250,9 @@
 .parallax-copy { position:relative; text-align:center; color:var(--background); }
 .parallax-copy h2 { color:var(--background); }
 @media (max-width:820px), (hover:none) { .parallax-band { background-attachment:scroll; min-height:50vh; } }
+.nav-drop-menu { background: var(--primary); border-color: color-mix(in oklab, var(--gold) 40%, transparent); }
+.nav-drop-menu a { color: var(--primary-foreground); }
+.nav-drop-menu a:hover { color: var(--gold); opacity:1; }
+.parallax-band::before { background: color-mix(in oklab, var(--primary) 55%, transparent); }
+.parallax-copy .section-label { color: var(--gold); }
+.parallax-copy h2 { font-family: var(--font-display); font-size: clamp(34px, 5vw, 60px); }
