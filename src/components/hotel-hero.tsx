@@ -38,7 +38,7 @@ export function HotelHero() {
           <button className="hh-ic" type="button" data-hh="next" aria-label="Diapositive suivante">
             ›
           </button>
-          <button className="hh-ic hh-pp" type="button" data-hh="pp">
+          <button className="hh-ic hh-pp" type="button" data-hh="pp" aria-pressed="false">
             Pause
           </button>
         </div>

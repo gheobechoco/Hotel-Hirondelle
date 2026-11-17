@@ -113,10 +113,12 @@ export function initHero(root) {
     cur = -1,
     timer = null,
     paused = false,
-    hovered = false,
-    focused = false,
     vis = true;
   var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  paused = still;
+  var pp = root.querySelector('[data-hh="pp"]');
+  pp.textContent = paused ? "Lecture" : "Pause";
+  pp.setAttribute("aria-pressed", String(paused));
   var cleanups = [];
   var observer = null;
   var firstFrame = null;
@@ -155,7 +157,7 @@ export function initHero(root) {
   }
   function play() {
     stop();
-    if (!paused && !still && !hovered && !focused && vis && !document.hidden)
+    if (!paused && vis && !document.hidden)
       timer = setInterval(function () {
         go(cur + 1);
       }, INTERVAL);
@@ -176,29 +178,12 @@ export function initHero(root) {
     go(cur + 1);
     play();
   });
-  var pp = root.querySelector('[data-hh="pp"]');
   listen(pp, "click", function () {
     paused = !paused;
     pp.textContent = paused ? "Lecture" : "Pause";
+    pp.setAttribute("aria-pressed", String(paused));
+    if (still) root.toggleAttribute("data-motion", !paused);
     play();
-  });
-  listen(root, "mouseenter", function () {
-    hovered = true;
-    stop();
-  });
-  listen(root, "mouseleave", function () {
-    hovered = false;
-    play();
-  });
-  listen(root, "focusin", function () {
-    focused = true;
-    stop();
-  });
-  listen(root, "focusout", function (event) {
-    if (!root.contains(event.relatedTarget)) {
-      focused = false;
-      play();
-    }
   });
   listen(document, "visibilitychange", play);
   if ("IntersectionObserver" in window) {

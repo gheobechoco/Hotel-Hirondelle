@@ -27,6 +27,7 @@ import { Route as OffresRouteImport } from './routes/offres'
 import { Route as PolitiqueCookiesRouteImport } from './routes/politique-cookies'
 import { Route as RestaurationRouteImport } from './routes/restauration'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as VisiteVirtuelleRouteImport } from './routes/visite-virtuelle'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -118,6 +119,11 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VisiteVirtuelleRoute = VisiteVirtuelleRouteImport.update({
+  id: '/visite-virtuelle',
+  path: '/visite-virtuelle',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -138,6 +144,7 @@ export interface FileRoutesByFullPath {
   '/politique-cookies': typeof PolitiqueCookiesRoute
   '/restauration': typeof RestaurationRoute
   '/services': typeof ServicesRoute
+  '/visite-virtuelle': typeof VisiteVirtuelleRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -158,6 +165,7 @@ export interface FileRoutesByTo {
   '/politique-cookies': typeof PolitiqueCookiesRoute
   '/restauration': typeof RestaurationRoute
   '/services': typeof ServicesRoute
+  '/visite-virtuelle': typeof VisiteVirtuelleRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -179,6 +187,7 @@ export interface FileRoutesById {
   '/politique-cookies': typeof PolitiqueCookiesRoute
   '/restauration': typeof RestaurationRoute
   '/services': typeof ServicesRoute
+  '/visite-virtuelle': typeof VisiteVirtuelleRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -201,6 +210,7 @@ export interface FileRouteTypes {
     | '/politique-cookies'
     | '/restauration'
     | '/services'
+    | '/visite-virtuelle'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -221,6 +231,7 @@ export interface FileRouteTypes {
     | '/politique-cookies'
     | '/restauration'
     | '/services'
+    | '/visite-virtuelle'
   id:
     | '__root__'
     | '/'
@@ -241,6 +252,7 @@ export interface FileRouteTypes {
     | '/politique-cookies'
     | '/restauration'
     | '/services'
+    | '/visite-virtuelle'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -262,6 +274,7 @@ export interface RootRouteChildren {
   PolitiqueCookiesRoute: typeof PolitiqueCookiesRoute
   RestaurationRoute: typeof RestaurationRoute
   ServicesRoute: typeof ServicesRoute
+  VisiteVirtuelleRoute: typeof VisiteVirtuelleRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -392,6 +405,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/visite-virtuelle': {
+      id: '/visite-virtuelle'
+      path: '/visite-virtuelle'
+      fullPath: '/visite-virtuelle'
+      preLoaderRoute: typeof VisiteVirtuelleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -414,6 +434,7 @@ const rootRouteChildren: RootRouteChildren = {
   PolitiqueCookiesRoute: PolitiqueCookiesRoute,
   RestaurationRoute: RestaurationRoute,
   ServicesRoute: ServicesRoute,
+  VisiteVirtuelleRoute: VisiteVirtuelleRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
