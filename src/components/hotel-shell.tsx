@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import swallow from "@/assets/hirondelle-swallow.png.asset.json";
+import swallow from "@/assets/hirondelle-swallow.png";
 import { Menu, X, ArrowUpRight, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navigation } from "@/lib/hotel";
@@ -20,7 +20,7 @@ export function Brand() {
     <Link to="/" className="wordmark">
       <span
         className="brand-bird"
-        style={{ WebkitMaskImage: `url(${swallow.url})`, maskImage: `url(${swallow.url})` }}
+        style={{ WebkitMaskImage: `url(${swallow})`, maskImage: `url(${swallow})` }}
         aria-hidden="true"
       />
       <span>
